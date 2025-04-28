@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+    ></script>
+    <script>
+      jQuery(document).ready(function ($) {
+        $('.focus-content').each(function () {
+          var $container = $(this);
+          var $content = $container.find('.fc-content');
+          function autoResize() {
+            var containerWidth = $container.outerWidth();
+            var containerHeight = $container.outerHeight();
+            var contentWidth = $content.outerWidth();
+            var contentHeight = $content.outerHeight();
+
+            // Theo width
+            if (
+              containerWidth / containerHeight >
+              contentWidth / contentHeight
+            ) {
+              $content.css({
+                width: containerWidth,
+                height: (contentHeight * containerWidth) / contentWidth,
+              });
+            } else {
+              $content.css({
+                width: (contentWidth * containerHeight) / contentHeight,
+                height: containerHeight,
+              });
+            }
+          }
+
+          autoResize();
+          $(window).resize(autoResize);
+        });
+      });
+    </script>
+    <style>
+      .img-with-thumbs {
+        position: relative;
+        overflow: hidden;
+      }
+      .img-with-thumbs .iwt-thumb {
+        position: absolute;
+      }
+      .img-with-thumbs > img {
+        width: 100%;
+      }
+      .focus-content {
+        position: relative;
+      }
+      .focus-content .fc-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+      }
+
+      .fc-content > img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Focus image -->
+    <div
+      class="focus-content"
+      style="width: 100%; height: 500px; margin-bottom: 50px; overflow: hidden"
+    >
+      <div
+        class="fc-content"
+        style="left: 20%; top: 20%; transform: translate(-20%, -20%)"
+      >
+        <div class="img-with-thumbs">
+          <img
+            src="https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-260nw-789676552.jpg"
+            alt=""
+          />
+          <img
+            class="iwt-thumb"
+            style="width: 30%; left: 10%; top: 10%"
+            src="https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-260nw-789676552.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Image with thumb in picture -->
+    <div class="img-with-thumbs">
+      <img
+        src="https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-260nw-789676552.jpg"
+        alt=""
+      />
+      <img
+        class="iwt-thumb"
+        style="width: 30%; left: 10%; top: 10%"
+        src="https://image.shutterstock.com/image-photo/beautiful-water-drop-on-dandelion-260nw-789676552.jpg"
+        alt=""
+      />
+    </div>
+  </body>
+</html>
