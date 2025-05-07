@@ -1,0 +1,14 @@
+.body {
+  max-width: 960px;
+  margin-inline: auto;
+  font-size: 18px;
+  font-family: sans-serif;
+  line-height: 1.8;
+}
+pre {
+  padding: 16px;
+  border: 1px solid #ababab;
+  border-radius: 4px;
+  background-color: #ededed;
+  white-space: pre-wrap;
+}

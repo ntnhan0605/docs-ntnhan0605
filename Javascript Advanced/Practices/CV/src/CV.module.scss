@@ -1,0 +1,257 @@
+.main {
+  background-color: #fff;
+}
+
+.cv {
+  padding-block: 30px;
+  max-width: 1024px;
+  margin-inline: auto;
+
+  .name {
+    margin-bottom: 16px;
+    color: var(--main-color);
+    font-family: var(--font-libre-bodoni), serif;
+    font-size: 27px;
+    line-height: 1;
+    letter-spacing: 0.1em;
+  }
+
+  .position {
+    margin-bottom: 8px;
+    color: var(--main-color);
+    font-family: var(--font-libre-bodoni), serif;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+  }
+
+  .title {
+    margin-bottom: 8px;
+    color: var(--main-color);
+    font-family: var(--font-libre-bodoni), serif;
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    + .divider {
+      margin-top: 0px;
+    }
+  }
+
+  .subtitle {
+    color: #424242;
+    font-family: inherit !important;
+    font-weight: 600;
+    margin-bottom: 8px;
+    letter-spacing: 0.05em;
+    &.note {
+      text-decoration: underline;
+    }
+  }
+
+  .listTitle {
+    font-family: inherit !important;
+    font-weight: 400;
+    margin-top: 4px;
+    margin-bottom: 2px;
+  }
+
+  .description {
+    strong {
+      font-weight: 600;
+    }
+  }
+
+  .divider {
+    width: 100%;
+    margin-block: 16px;
+    border-bottom: 1px solid var(--main-color);
+  }
+
+  .list {
+    list-style: none;
+    li {
+      &:before {
+        content: '-';
+        display: inline-block;
+        margin-right: 20px;
+      }
+      + li {
+        margin-top: 4px;
+      }
+
+      .list {
+        padding-left: 20px;
+        li {
+          &:before {
+            content: '•';
+            margin-right: 14px;
+            font-size: 30px;
+            line-height: 1;
+            vertical-align: -5px;
+          }
+        }
+      }
+    }
+  }
+
+  .avatar {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 120%;
+    border-radius: 10px;
+    .avatarImg {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 40%;
+      transform: translate(-50%, -40%);
+    }
+  }
+
+  .table {
+    width: 100%;
+    th {
+      vertical-align: top;
+      font-weight: 600;
+      text-align: left;
+    }
+    td {
+      vertical-align: top;
+      white-space: break-word;
+    }
+    p,
+    ul {
+      margin-bottom: 0.4rem;
+    }
+
+    .head10 {
+      width: 10%;
+    }
+    .head20 {
+      width: 20%;
+    }
+    .head25 {
+      width: 25%;
+    }
+    .head30 {
+      width: 30%;
+    }
+    .head40 {
+      width: 40%;
+    }
+    .head45 {
+      width: 45%;
+    }
+    .head50 {
+      width: 50%;
+    }
+    .head60 {
+      width: 60%;
+    }
+    .head70 {
+      width: 70%;
+    }
+
+    .note {
+      font-style: italic;
+      strong {
+        font-weight: 500;
+      }
+    }
+
+    ~ .table {
+      margin-top: 16px;
+    }
+
+    &.bordered {
+      tr {
+        th,
+        td {
+          border-top: 1px solid var(--border-color);
+          border-left: 1px solid var(--border-color);
+          padding: 8px;
+
+          &:last-child {
+            border-right: 1px solid var(--border-color);
+          }
+        }
+
+        &:last-child {
+          th,
+          td {
+            border-bottom: 1px solid var(--border-color);
+          }
+        }
+      }
+    }
+  }
+
+  .container {
+    ~ .container {
+      margin-top: 36px;
+    }
+  }
+
+  .infoContainer {
+    display: flex;
+    justify-content: space-between;
+
+    .infoLeft {
+      flex: 1;
+      min-width: 0;
+      .list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+          &:before {
+            content: none;
+            margin-right: 0;
+          }
+          display: flex;
+          .label {
+            width: 120px;
+          }
+          .value {
+            flex: 1;
+            min-width: 0;
+          }
+          + li {
+            margin-top: 4px;
+          }
+        }
+      }
+    }
+
+    .infoRight {
+      width: 100%;
+      margin-left: 30px;
+      max-width: 160px;
+    }
+  }
+
+  .skill {
+    .list {
+      margin-left: 16px;
+    }
+    + .skill {
+      margin-top: 16px;
+    }
+  }
+
+  .project {
+    + .project {
+      margin-top: 24px;
+    }
+
+    .projectTitle {
+      padding-left: 16px;
+      color: #757575;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+    }
+  }
+}
