@@ -53,16 +53,22 @@ const workExperiences: Record<
   string,
   { company: string; position: string; list: string[] }
 > = {
-  'May 2021 – Now': {
+  'May 2023 – Now': {
     company: 'Hello Health Group',
-    position: 'Software Engineer',
+    position: 'Promoted to Senior Front End developer',
     list: [
       'Developed responsive interfaces using React and Tailwind CSS, improving load times by 30%.',
       'Collaborated with backend engineers to integrate RESTful APIs.',
-      'Led the migration of legacy code to a modern React-based stack.',
-      'Worked closely with UX designers to implement Figma designs pixel-perfectly.',
-      'Support legacy applications and contribute new feature development.',
       'Engineered full-featured admin dashboards from the ground up.',
+    ],
+  },
+  'May 2021 – May 2023': {
+    company: 'Hello Health Group',
+    position: 'Middle Front End developer',
+    list: [
+      'Led the migration of legacy code to a modern React-based stack.',
+      'Support legacy applications and contribute new feature development.',
+      'Worked closely with UX designers to implement Figma designs pixel-perfectly.',
     ],
   },
   'Feb 2020 – Apr 2021': {
@@ -123,6 +129,7 @@ const projects: Record<string, Project[]> = {
       ],
       size: 5,
       detail: [
+        'Developed data collection forms on client websites, integrated with SIDIS to store submissions in BigQuery.',
         'Built React components that precisely matched Figma UI/UX designs for seamless front-end implementation.',
         'Performed regular maintenance and content updates for established website pages.',
         'Integrated third-party tools (Healthtool, Leadgen, Subot, Sidis) into the website to track user interactions and collect data through the UI',
@@ -134,13 +141,9 @@ const projects: Record<string, Project[]> = {
       name: ['SIDIS', 'May 2023 - May 2024', 'Senior Front-end Developer'],
       size: 7,
       detail: [
-        {
-          'Built admin dashboard and internal tools: ': [
-            'Segmented users from large-scale datasets to enable targeted marketing and personalization.',
-            'Set up automated campaigns for multi-channel messaging, including email, web push, app push, SMS, WhatsApp, and Zalo.',
-            'Developed a dynamic dashboard using Muuri and Highcharts, allowing users to rearrange analytics widgets via drag-and-drop.',
-          ],
-        },
+        'Developed a dynamic dashboard using Muuri and Highcharts, allowing users to rearrange analytics widgets via drag-and-drop.',
+        'Segmented users from large-scale datasets to enable targeted marketing and personalization.',
+        'Set up automated campaigns for multi-channel messaging, including email, web push, app push, SMS, WhatsApp, and Zalo.',
         'Developed visual workflow components using React Flow (node-based editors and interactive diagrams) and Zustand (state management), published them as an <a href="https://www.npmjs.com/package/@ntnhan0605/hhg-workflow" target="_blank" rel="noreferrer">NPM Package</a>, and integrated the package into the SIDIS platform.',
         'Technial used in projects: ReactJS, AntD, D3-Hierarchy, Zustand, TailwindCSS, Muuri, ReactFlow, Recharts, Highcharts, Docker, npm, Typescript, ESlint, Prettier',
       ],
@@ -150,7 +153,7 @@ const projects: Record<string, Project[]> = {
       name: [
         'Health tools, Lead tools',
         'Jan 2022 - May 2023',
-        'Senior Front-end Developer',
+        'Middle Front-end Developer',
       ],
       size: 6,
       detail: [
@@ -169,7 +172,7 @@ const projects: Record<string, Project[]> = {
       name: [
         'SUBOT/Risk screener',
         'May 2021 - Jan 2022',
-        'Front-end Developer',
+        'Middle Front-end Developer',
       ],
       size: 4,
       detail: [
@@ -179,6 +182,7 @@ const projects: Record<string, Project[]> = {
             'Translated Figma-based UI/UX designs into pixel-perfect components while collaborating with the design team.',
           ],
         },
+        'Developed interactive front-end for Subot and Risk Screener to conditionally show the next question based on user responses.',
         'Technial used in projects: ReactJS, ReactFlow, AntD, Docker, Typescript, ESlint, Prettier.',
       ],
     },
