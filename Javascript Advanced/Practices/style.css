@@ -12,3 +12,26 @@ pre {
   background-color: #ededed;
   white-space: pre-wrap;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+code {
+  padding: 2px 4px;
+  background-color: #ededed;
+  border: 1px solid #ababab;
+}
+
+button {
+  padding: 8px 16px;
+  color: #fff;
+  font-size: 16px;
+  border: 1px solid gray;
+  background-color: gray;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+[data-example-file] + [data-example-file] {
+  margin-top: 24px;
+}
