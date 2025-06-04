@@ -12,6 +12,11 @@ pre {
   background-color: #ededed;
   white-space: pre-wrap;
 }
+pre code {
+  padding: none;
+  background-color: none;
+  border: none;
+}
 img {
   max-width: 100%;
   height: auto;
@@ -30,6 +35,32 @@ button {
   background-color: gray;
   border-radius: 4px;
   cursor: pointer;
+}
+
+table {
+  border-spacing: 0;
+  border: 1px solid gray;
+  margin-block: 24px;
+}
+
+table th,
+table td {
+  padding: 4px 16px;
+}
+
+table th,
+table td {
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+}
+
+table tr:first-child th {
+  border-top: 0;
+}
+
+table tr:first-child th:first-child,
+table td:first-child {
+  border-left: 0;
 }
 
 [data-example-file] + [data-example-file] {
