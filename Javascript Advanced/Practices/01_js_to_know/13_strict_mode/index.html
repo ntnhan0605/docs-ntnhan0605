@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Strict Mode</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style.css" />
+  </head>
+  <body class="body">
+    <div id="root"></div>
+
+    <div data-example-file="./strict_mode.js">
+      <button class="example-btn">Strict Mode</button>
+      <div class="example"></div>
+    </div>
+
+    <div style="display: flex; align-items: center; gap: 16px">
+      <div data-example-file="./strict_mode-event.js">
+        <button class="example-btn">Event with this</button>
+        <div class="example"></div>
+      </div>
+      <span>Run Event with this then click button</span>
+      <button id="click">Handle Click</button>
+    </div>
+
+    <script type="module" src="../../script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+# <div align="center">Từ khóa `this` trong Javascript</div>
+
+- `this` được ràng buộc (**binding**) vảo một **Excecution Context** mỗi khi **Execution Context** được khởi tạo.
+- Khi nào `Execution Context` được khởi tạo?
+  - Khi gọi hàm (Execution Context).
+  - Khi chạy ứng dụng (Global Execution Context)
+- Có **3** kiểu ràng buộc `this`
+  - Implicit Binding (Ràng buộc ngầm).
+    - Thông qua `Dot notation`.
+  - Explicit Binding (Ràng buộc tường minh).
+    - Do lập trình viên quyết định.
+    - Sử dụng các `method` dựng sẵn (**built-in**) của Javascript:
+      - `.bind(this)`
+      - `.call(this, args1, args2,...)`
+      - `.apply(this, [args1, args2,...])`
+  - Default Binding (Ràng buộc mặc định)
+    - Mặc định ràng buộc `globalThis` = `window`
+- `Arrow Function` không được ràng buộc `this`:
+  - Phụ thuộc vào nới khai báo `Function`.
+  - Sử dụng `this` như là scope của `function` bên ngoài.
+- Giá trí của `this` luôn thay đổi dựa trên cách gọi hàm, ngay cả khi hàm được xác định trên một đối tượng khởi tạo.
