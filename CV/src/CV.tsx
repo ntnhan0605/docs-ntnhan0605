@@ -53,29 +53,21 @@ const workExperiences: Record<
   string,
   { company: string; position: string; list: string[] }
 > = {
-  'May 2023 – Now': {
+  'May 2021 – Now': {
     company: 'Hello Health Group',
-    position: 'Promoted to Senior Front End developer',
+    position: 'Senior Front-End developer',
     list: [
-      'Developed responsive interfaces using React and Tailwind CSS, improving load times by 30%.',
+      'Developed responsive user interfaces using React and Next.js, styled with MUI, Ant Design, Mantine, and Tailwind CSS.',
       'Collaborated with backend engineers to integrate RESTful APIs.',
-      'Engineered full-featured admin dashboards from the ground up.',
-    ],
-  },
-  'May 2021 – May 2023': {
-    company: 'Hello Health Group',
-    position: 'Middle Front End developer',
-    list: [
-      'Led the migration of legacy code to a modern React-based stack.',
       'Support legacy applications and contribute new feature development.',
-      'Worked closely with UX designers to implement Figma designs pixel-perfectly.',
+      'Worked closely with UI designers to implement Figma designs pixel-perfectly.',
     ],
   },
   'Feb 2020 – Apr 2021': {
     company: 'Zivas',
     position: 'Front-End Developer',
     list: [
-      'Worked closely with UX designers to implement Figma designs pixel-perfectly.',
+      'Worked closely with UI designers to implement Figma designs pixel-perfectly.',
       'Created and maintained custom WordPress themes aligned with marketing requirements.',
     ],
   },
@@ -83,6 +75,7 @@ const workExperiences: Record<
     company: 'Corsiva Lab Pte Ltd',
     position: 'Web Developer',
     list: [
+      'Used the TypeRocket framework to build a drag-and-drop page layout system within the WordPress CMS.',
       'Built and updated WordPress themes aligned with marketing specifications, leveraging Elementor and Advanced Custom Fields (ACF).',
     ],
   },
@@ -91,6 +84,7 @@ const workExperiences: Record<
     position: 'Web Developer',
     list: [
       'Implemented UI-driven updates and custom themes for WordPress marketing sites.',
+      'Built custom page layouts in WordPress using the Advanced Custom Fields plugin, following provided UI designs.',
     ],
   },
 };
@@ -99,8 +93,8 @@ const skills: Record<string, string[]> = {
   'Technical skills': [
     'Languages: HTML5, CSS3, JavaScript (ES6+), TypeScript, PHP',
     'Frameworks: React, Next.js, Vue.js',
-    'Library: MUI, AntDesign, Redux, Zustand, jQuery, Bootstrap',
-    'Styling: TailwindCSS, Sass, Bootstrap, CSS Modules, CSS-in-JS',
+    'Library: Redux, Zustand, jQuery',
+    'Styling: MUI, AntDesign, TailwindCSS, Sass, Bootstrap, CSS Modules, CSS-in-JS',
     'Tools: Git, Webpack, Vite, npm',
     'Others: REST APIs, gRPC, Responsive Design, Figma, Agile/Scrum, Docker, Redis, experience with Ory Hydra',
   ],
@@ -133,7 +127,7 @@ const projects: Record<string, Project[]> = {
         'Built React components that precisely matched Figma UI/UX designs for seamless front-end implementation.',
         'Performed regular maintenance and content updates for established website pages.',
         'Integrated third-party tools (Healthtool, Leadgen, Subot, Sidis) into the website to track user interactions and collect data through the UI',
-        'Technial used in projects: ReactJS, NextJS, Typescript, ESlint, Prettier',
+        'Technial used in projects: ReactJS, NextJS, Zustand, ReactFlow, d3-hierarchy, Typescript, ESlint, Prettier',
       ],
     },
     // SIDIS
@@ -153,7 +147,7 @@ const projects: Record<string, Project[]> = {
       name: [
         'Health tools, Lead tools',
         'Jan 2022 - May 2023',
-        'Middle Front-end Developer',
+        'Senior Front-end Developer',
       ],
       size: 6,
       detail: [
@@ -172,7 +166,7 @@ const projects: Record<string, Project[]> = {
       name: [
         'SUBOT/Risk screener',
         'May 2021 - Jan 2022',
-        'Middle Front-end Developer',
+        'Senior Front-end Developer',
       ],
       size: 4,
       detail: [
@@ -224,7 +218,7 @@ const projects: Record<string, Project[]> = {
       size: 2,
       detail: [
         'Built custom WordPress themes by accurately translating Adobe XD layouts into code.',
-        'Built dynamic WordPress templates using TypeRocket, enabling flexible section layouts per page.',
+        'Developed flexible, drag-and-drop page layout components in WordPress CMS using TypeRocket.',
         'Technical used in projects: HTML, CSS, JS, jQuery, Swiper, Bootstrap, Wordpress, Woocommerce, TypeRocket, Advanced Custom Field (ACF).',
       ],
     },
@@ -241,7 +235,7 @@ const projects: Record<string, Project[]> = {
       size: 2,
       detail: [
         'Built custom WordPress themes by accurately translating Adobe XD layouts into code.',
-        'Developed custom WordPress theme templates with flexible section layouts for each page.',
+        'Built custom page layout functionality with drag-and-drop capability in WordPress, leveraging the TypeRocket plugin.',
         'Technical used in projects: HTML, CSS, JS, jQuery, Swiper, Bootstrap, Wordpress, Woocommerce, TypeRocket, Advanced Custom Field (ACF).',
       ],
     },
