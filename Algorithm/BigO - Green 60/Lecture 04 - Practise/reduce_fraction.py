@@ -10,3 +10,9 @@ def GreatestCommonDenomiator(a, b):
 
 ucln = GreatestCommonDenomiator(a, b)
 print(a // ucln, b // ucln)
+
+# C2 : Euclid
+# while b != 0:
+# 	reminder = a % b
+# 	b = reminder
+# => a -> UCLN

@@ -29,9 +29,7 @@ const infos: Record<string, ReactNode> = {
 };
 
 const objectives: string[] = [
-  'Detail-oriented Front-End Developer with 5+ years of experience in creating responsive and user-centric web applications.',
-  'Seeking to leverage expertise in modern frameworks such as React, Vue.js to contribute to dynamic development teams.',
-  'Committed to delivering clean, maintainable code with a strong focus on UI/UX design, performance optimization, and continuous learning in the evolving front-end landscape.',
+  'Motivated Front-End Developer with strong experience in React and modern UI libraries, actively pursuing growth into a Full-Stack Developer role. Eager to expand skills in back-end technologies such as Node.js, Express, MongoDB, and PostgreSQL, while gaining hands-on experience in mobile development with React Native. Also interested in working with cloud services like Firebase and AWS to build scalable, end-to-end web and mobile applications.',
 ];
 
 const educations: Record<string, { title: string; list: string[] }> = {
@@ -57,23 +55,23 @@ const workExperiences: Record<
     company: 'Hello Health Group',
     position: 'Senior Front-End developer',
     list: [
-      'Developed responsive user interfaces using React and Next.js, styled with MUI, Ant Design, Mantine, and Tailwind CSS.',
-      'Collaborated with backend engineers to integrate RESTful APIs.',
-      'Support legacy applications and contribute new feature development.',
-      'Worked closely with UI designers to implement Figma designs pixel-perfectly.',
+      'Developed responsive user interfaces using ReactJS and NextJS, styled with modern UI frameworks including MUI, Ant Design, Mantine, and Tailwind CSS to ensure consistent design and mobile-first responsiveness.',
+      'Collaborated with backend engineers to integrate RESTful APIs, ensuring seamless data flow between the front-end interface and server-side services.',
+      'Maintained and supported legacy applications while actively contributing to the development of new features to enhance functionality and user experience.',
+      'Translated Figma designs into pixel-perfect, responsive UI components while working closely with UX teams.',
     ],
   },
   'Feb 2020 – Apr 2021': {
     company: 'Zivas',
     position: 'Front-End Developer',
     list: [
-      'Worked closely with UI designers to implement Figma designs pixel-perfectly.',
+      'Translated Adobe XD design files into responsive, pixel-perfect user interfaces in close coordination with UI designers.',
       'Created and maintained custom WordPress themes aligned with marketing requirements.',
     ],
   },
   'Aug 2019 – Feb 2020': {
     company: 'Corsiva Lab Pte Ltd',
-    position: 'Web Developer',
+    position: 'Front-End Developer',
     list: [
       'Used the TypeRocket framework to build a drag-and-drop page layout system within the WordPress CMS.',
       'Built and updated WordPress themes aligned with marketing specifications, leveraging Elementor and Advanced Custom Fields (ACF).',
@@ -81,21 +79,23 @@ const workExperiences: Record<
   },
   'Jan 2018 – Aug 2019': {
     company: 'Munkas Agency',
-    position: 'Web Developer',
+    position: 'Front-End Developer',
     list: [
-      'Implemented UI-driven updates and custom themes for WordPress marketing sites.',
-      'Built custom page layouts in WordPress using the Advanced Custom Fields plugin, following provided UI designs.',
+      'Translated Adobe Photoshop and Illustrator designs into responsive WordPress themes with drag-and-drop functionality, powered by ACF, TypeRocket, and Elementor for streamlined content editing.',
+      'Maintained and updated existing WordPress websites, including theme/plugin management, and handled deployment via cPanel with full support for FTP setup, DNS configuration, and MySQL database import/export.',
     ],
   },
 };
 
 const skills: Record<string, string[]> = {
   'Technical skills': [
-    'Languages: HTML5, CSS3, JavaScript (ES6+), TypeScript, PHP',
-    'Frameworks: React, Next.js, Vue.js',
-    'Library: Redux, Zustand, jQuery',
-    'Styling: MUI, AntDesign, TailwindCSS, Sass, Bootstrap, CSS Modules, CSS-in-JS',
-    'Tools: Git, Webpack, Vite, npm',
+    'Languages: HTML5, CSS3, Javascript(ES6+), TypeScript, PHP',
+    'Frameworks: NextJS',
+    'Library: ReactJS, VueJS, Zustand, Redux, jQuery',
+    'Styling: CSS Modules, CSS-in-JS, Ant Design, TailwindCSS, MUI, Sass, Bootstrap',
+    'Version control: Git',
+    'Module bundler/Build tool: Webpack, Vite, Rollup',
+    'Package management: npm',
     'Others: REST APIs, gRPC, Responsive Design, Figma, Agile/Scrum, Docker, Redis, experience with Ory Hydra',
   ],
   'Soft skills': [
@@ -123,11 +123,10 @@ const projects: Record<string, Project[]> = {
       ],
       size: 5,
       detail: [
-        'Developed data collection forms on client websites, integrated with SIDIS to store submissions in BigQuery.',
-        'Built React components that precisely matched Figma UI/UX designs for seamless front-end implementation.',
-        'Performed regular maintenance and content updates for established website pages.',
-        'Integrated third-party tools (Healthtool, Leadgen, Subot, Sidis) into the website to track user interactions and collect data through the UI',
-        'Technial used in projects: ReactJS, NextJS, Zustand, ReactFlow, d3-hierarchy, Typescript, ESlint, Prettier',
+        'Built the Health Tool front-end by accurately converting Figma UI/UX into React components, styled with Tailwind CSS and MUI, animated with Framer Motion, and managed through a Storybook-driven component system.',
+        'Managed multilingual content across 11 regional websites using react-intl, with features including language toggling, dynamic message loading, and SEO-friendly routing for enhanced global reach.',
+        'Implemented internal and third-party tools to capture user interactions via the website UI, enabling near real-time tracking and data collection with platforms such as HealthTool, Leadgen, Subot, and Sidis.',
+        '<strong>Technical used in projects:</strong> ReactJS, NextJS, Zustand, ReactFlow, d3-hierarchy, Typescript, ESlint, Prettier',
       ],
     },
     // SIDIS
@@ -139,7 +138,7 @@ const projects: Record<string, Project[]> = {
         'Segmented users from large-scale datasets to enable targeted marketing and personalization.',
         'Set up automated campaigns for multi-channel messaging, including email, web push, app push, SMS, WhatsApp, and Zalo.',
         'Developed visual workflow components using React Flow (node-based editors and interactive diagrams) and Zustand (state management), published them as an <a href="https://www.npmjs.com/package/@ntnhan0605/hhg-workflow" target="_blank" rel="noreferrer">NPM Package</a>, and integrated the package into the SIDIS platform.',
-        'Technial used in projects: ReactJS, AntD, D3-Hierarchy, Zustand, TailwindCSS, Muuri, ReactFlow, Recharts, Highcharts, Docker, npm, Typescript, ESlint, Prettier',
+        '<strong>Technical used in projects:</strong> ReactJS, AntD, D3-Hierarchy, Zustand, TailwindCSS, Muuri, ReactFlow, Recharts, Highcharts, Docker, npm, Typescript, ESlint, Prettier',
       ],
     },
     // HEALTH TOOLS, LEAD TOOLS
@@ -158,7 +157,7 @@ const projects: Record<string, Project[]> = {
             'Integrated backend APIs to collect data form & tracking from health/lead tools.',
           ],
         },
-        'Technical used in projects: ReactJS, Vue.js, NextJS, Typescript, ESlint, Prettier.',
+        '<strong>Technical used in projects:</strong> ReactJS, Vue.js, NextJS, Typescript, ESlint, Prettier.',
       ],
     },
     // SUBOT/RISK SCREENER
@@ -177,7 +176,7 @@ const projects: Record<string, Project[]> = {
           ],
         },
         'Developed interactive front-end for Subot and Risk Screener to conditionally show the next question based on user responses.',
-        'Technial used in projects: ReactJS, ReactFlow, AntD, Docker, Typescript, ESlint, Prettier.',
+        '<strong>Technical used in projects:</strong> ReactJS, ReactFlow, AntD, Docker, Typescript, ESlint, Prettier.',
       ],
     },
   ],
@@ -193,7 +192,7 @@ const projects: Record<string, Project[]> = {
             'Worked alongside UX designers to accurately implement Figma designs in building user-facing tools.',
           ],
         },
-        'Technical used in projects: ReactJS, AntD.',
+        '<strong>Technical used in projects:</strong> HTML, CSS, Javascript, ReactJS, Ant Design.',
       ],
     },
     // Hotel UEH Edu
@@ -204,7 +203,7 @@ const projects: Record<string, Project[]> = {
       size: 2,
       detail: [
         'Developed responsive WordPress themes with pixel-perfect precision from Adobe XD designs.',
-        'Technical used in projects: HTML, CSS, JS, jQuery, Swiper, Bootstrap, Wordpress, WPML, TypeRocket, Advanced Custom Field (ACF).',
+        '<strong>Technical used in projects:</strong> HTML, CSS, JS, jQuery, Swiper, Bootstrap, Wordpress, WPML, TypeRocket, Advanced Custom Field (ACF).',
       ],
     },
   ],
@@ -219,7 +218,7 @@ const projects: Record<string, Project[]> = {
       detail: [
         'Built custom WordPress themes by accurately translating Adobe XD layouts into code.',
         'Developed flexible, drag-and-drop page layout components in WordPress CMS using TypeRocket.',
-        'Technical used in projects: HTML, CSS, JS, jQuery, Swiper, Bootstrap, Wordpress, Woocommerce, TypeRocket, Advanced Custom Field (ACF).',
+        '<strong>Technical used in projects:</strong> HTML, CSS, Javascript, jQuery, Swiper, Bootstrap, Wordpress, Woocommerce, TypeRocket, Advanced Custom Field (ACF).',
       ],
     },
     {
@@ -228,6 +227,7 @@ const projects: Record<string, Project[]> = {
       detail: [
         'Used HTML, CSS, and jQuery to translate Figma designs into responsive, user-friendly tools in close collaboration with UX designers.',
         "Utilized cookies to store and restore users' previous steps in multi-step processes.",
+        '<strong>Technical used in projects:</strong> HTML, CSS, Javascript, jQuery, Swiper, Bootstrap',
       ],
     },
     {
@@ -236,7 +236,7 @@ const projects: Record<string, Project[]> = {
       detail: [
         'Built custom WordPress themes by accurately translating Adobe XD layouts into code.',
         'Built custom page layout functionality with drag-and-drop capability in WordPress, leveraging the TypeRocket plugin.',
-        'Technical used in projects: HTML, CSS, JS, jQuery, Swiper, Bootstrap, Wordpress, Woocommerce, TypeRocket, Advanced Custom Field (ACF).',
+        '<strong>Technical used in projects:</strong> HTML, CSS, Javascript, jQuery, Swiper, Bootstrap, Wordpress, Woocommerce, TypeRocket, Advanced Custom Field (ACF).',
       ],
     },
   ],
@@ -246,7 +246,7 @@ const projects: Record<string, Project[]> = {
       size: 1,
       detail: [
         'Worked alongside UX designers to accurately implement Figma designs in building user-facing tools.',
-        'Technical used in projects: HTML, CSS, JS, jQuery, Swiper, Bootstrap, Wordpress, Advanced Custom Field (ACF).',
+        '<strong>Technical used in projects:</strong> HTML, CSS, JS, jQuery, Swiper, Bootstrap, Wordpress, Advanced Custom Field (ACF).',
       ],
       note: '<i><strong>* Note:</strong></i> Munkas Agency is a social media company so each campaign has one website for each project. After the campaign ends, the site is no longer kept. So I cannot save all the domains for that project.',
     },
@@ -382,7 +382,12 @@ export const CV: FC = () => {
           <div className={styles.divider} />
           <ul className={styles.list}>
             {objectives.map((item, itemIndex) => {
-              return <li key={itemIndex.toString()}>{item}</li>;
+              return (
+                <li
+                  key={itemIndex.toString()}
+                  dangerouslySetInnerHTML={{ __html: item }}
+                />
+              );
             })}
           </ul>
         </div>
@@ -402,7 +407,12 @@ export const CV: FC = () => {
                       <h4 className={styles.subtitle}>{value.title}</h4>
                       <ul className={styles.list}>
                         {value.list.map((item, itemIndex) => {
-                          return <li key={itemIndex.toString()}>{item}</li>;
+                          return (
+                            <li
+                              key={itemIndex.toString()}
+                              dangerouslySetInnerHTML={{ __html: item }}
+                            />
+                          );
                         })}
                       </ul>
                       {Object.keys(educations).length - 1 > index && (
@@ -437,7 +447,12 @@ export const CV: FC = () => {
                       </h6>
                       <ul className={styles.list}>
                         {value.list.map((item, itemIndex) => {
-                          return <li key={itemIndex.toString()}>{item}</li>;
+                          return (
+                            <li
+                              key={itemIndex.toString()}
+                              dangerouslySetInnerHTML={{ __html: item }}
+                            />
+                          );
                         })}
                       </ul>
                       {Object.keys(workExperiences).length - 1 > index && (
@@ -462,7 +477,12 @@ export const CV: FC = () => {
                 <h4 className={styles.subtitle}>{key}</h4>
                 <ul className={styles.list}>
                   {list.map((item, itemIndex) => {
-                    return <li key={itemIndex.toString()}>{item}</li>;
+                    return (
+                      <li
+                        key={itemIndex.toString()}
+                        dangerouslySetInnerHTML={{ __html: item }}
+                      />
+                    );
                   })}
                 </ul>
               </div>
