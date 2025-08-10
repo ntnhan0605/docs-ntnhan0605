@@ -1,6 +1,6 @@
 n = int(input())
 
-def isPrime(number):
+def is_prime(number):
 	if (number != 1):
 		c = 1
 		for i in range(2, int(number ** 0.5) + 1):
@@ -17,11 +17,11 @@ def PrimeClosestToN(n):
 	mi = n
 	for i in range(n, 0, -1):
 		down = i
-		if isPrime(i):
+		if is_prime(i):
 			mi = i
 			break
 		up = 2 * n - i
-		if isPrime(up):
+		if is_prime(up):
 			mx = up
 			break
 
