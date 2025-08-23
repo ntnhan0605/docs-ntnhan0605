@@ -53,11 +53,12 @@ const workExperiences: Record<
 > = {
   'May 2021 – Now': {
     company: 'Hello Health Group',
-    position: 'Senior Front-End developer',
+    position: 'Senior Front-End Engineer',
     list: [
       'Developed responsive user interfaces using ReactJS and NextJS, styled with modern UI frameworks including MUI, Ant Design, Mantine, and Tailwind CSS to ensure consistent design and mobile-first responsiveness.',
       'Collaborated with backend engineers to integrate RESTful APIs, ensuring seamless data flow between the front-end interface and server-side services.',
       'Maintained and supported legacy applications while actively contributing to the development of new features to enhance functionality and user experience.',
+      'Leveraged WordPress REST API to build a responsive, dynamic UI for a content platform, ensuring seamless data integration and optimized performance.',
       'Translated Figma designs into pixel-perfect, responsive UI components while working closely with UX teams.',
     ],
   },
@@ -102,7 +103,6 @@ const skills: Record<string, string[]> = {
     'Capable of working effectively both in collaborative team environments and independently.',
     'Optimistic and open-minded with strong critical thinking skills and a high level of self-awareness.',
     'Maintain composure and efficiency in high-pressure situations.',
-    'Strong planning and time management skills to prioritize tasks and meet deadlines efficiently.',
   ],
 };
 
@@ -117,36 +117,40 @@ const projects: Record<string, Project[]> = {
     // DISCOVER
     {
       name: [
-        'Discover(hellobacsi.com)',
+        '<strong>Discover(hellobacsi.com)</strong>',
         'Dec 2024 - Now',
-        'Senior Front-end Developer',
+        'Senior Front-End Engineer',
       ],
       size: 5,
       detail: [
         'Built the Health Tool front-end by accurately converting Figma UI/UX into React components, styled with Tailwind CSS and MUI, animated with Framer Motion, and managed through a Storybook-driven component system.',
         'Managed multilingual content across 11 regional websites using react-intl, with features including language toggling, dynamic message loading, and SEO-friendly routing for enhanced global reach.',
         'Implemented internal and third-party tools to capture user interactions via the website UI, enabling near real-time tracking and data collection with platforms such as HealthTool, Leadgen, Subot, and Sidis.',
-        '<strong>Technical used in projects:</strong> ReactJS, NextJS, Zustand, ReactFlow, d3-hierarchy, Typescript, ESlint, Prettier',
+        'Technical used: ReactJS, NextJS, Zustand, ReactFlow, d3-hierarchy, Typescript, ESlint, Prettier',
       ],
     },
     // SIDIS
     {
-      name: ['SIDIS', 'May 2023 - May 2024', 'Senior Front-end Developer'],
+      name: [
+        '<strong>SIDIS</strong>',
+        'May 2023 - May 2024',
+        'Senior Front-End Engineer',
+      ],
       size: 7,
       detail: [
-        'Developed a dynamic dashboard using Muuri and Highcharts, allowing users to rearrange analytics widgets via drag-and-drop.',
         'Segmented users from large-scale datasets to enable targeted marketing and personalization.',
-        'Set up automated campaigns for multi-channel messaging, including email, web push, app push, SMS, WhatsApp, and Zalo.',
+        'Set up automated campaigns for multi-channel messaging, including Email, Web push, App push, SMS, WhatsApp, and Zalo.',
         'Developed visual workflow components using React Flow (node-based editors and interactive diagrams) and Zustand (state management), published them as an <a href="https://www.npmjs.com/package/@ntnhan0605/hhg-workflow" target="_blank" rel="noreferrer">NPM Package</a>, and integrated the package into the SIDIS platform.',
-        '<strong>Technical used in projects:</strong> ReactJS, AntD, D3-Hierarchy, Zustand, TailwindCSS, Muuri, ReactFlow, Recharts, Highcharts, Docker, npm, Typescript, ESlint, Prettier',
+        'Developed a dynamic dashboard using Muuri and Highcharts, allowing users to rearrange analytics widgets via drag-and-drop.',
+        'Technical used: ReactJS, Ant Design, D3-Hierarchy, Zustand, TailwindCSS, Muuri, ReactFlow, Recharts, Highcharts, Docker, npm, Typescript, ESlint, Prettier',
       ],
     },
     // HEALTH TOOLS, LEAD TOOLS
     {
       name: [
-        'Health tools, Lead tools',
+        '<strong>Health tools, Lead tools</strong>',
         'Jan 2022 - May 2023',
-        'Senior Front-end Developer',
+        'Senior Front-End Engineer',
       ],
       size: 6,
       detail: [
@@ -157,26 +161,26 @@ const projects: Record<string, Project[]> = {
             'Integrated backend APIs to collect data form & tracking from health/lead tools.',
           ],
         },
-        '<strong>Technical used in projects:</strong> ReactJS, Vue.js, NextJS, Typescript, ESlint, Prettier.',
+        'Technical used: ReactJS, Vue.js, NextJS, Typescript, ESlint, Prettier.',
       ],
     },
     // SUBOT/RISK SCREENER
     {
       name: [
-        'SUBOT/Risk screener',
+        '<strong>SUBOT/Risk screener</strong>',
         'May 2021 - Jan 2022',
-        'Senior Front-end Developer',
+        'Senior Front-End Engineer',
       ],
       size: 4,
       detail: [
         {
           'Built admin dashboard and internal tools: ': [
-            'Used ReactFlow, AntD to engineered internal systems and dashboards to configure bots for each URL and control question visibility based on user selection.',
+            'Used ReactFlow, Ant Design to engineered internal systems and dashboards to configure bots for each URL and control question visibility based on user selection.',
             'Translated Figma-based UI/UX designs into pixel-perfect components while collaborating with the design team.',
           ],
         },
         'Developed interactive front-end for Subot and Risk Screener to conditionally show the next question based on user responses.',
-        '<strong>Technical used in projects:</strong> ReactJS, ReactFlow, AntD, Docker, Typescript, ESlint, Prettier.',
+        'Technical used: ReactJS, ReactFlow, Ant Design, Docker, Typescript, ESlint, Prettier.',
       ],
     },
   ],
@@ -192,7 +196,7 @@ const projects: Record<string, Project[]> = {
             'Worked alongside UX designers to accurately implement Figma designs in building user-facing tools.',
           ],
         },
-        '<strong>Technical used in projects:</strong> HTML, CSS, Javascript, ReactJS, Ant Design.',
+        'Technical used: HTML, CSS, Javascript, ReactJS, Ant Design.',
       ],
     },
     // Hotel UEH Edu
@@ -203,7 +207,20 @@ const projects: Record<string, Project[]> = {
       size: 2,
       detail: [
         'Developed responsive WordPress themes with pixel-perfect precision from Adobe XD designs.',
-        '<strong>Technical used in projects:</strong> HTML, CSS, JS, jQuery, Swiper, Bootstrap, Wordpress, WPML, TypeRocket, Advanced Custom Field (ACF).',
+        'Technical used: HTML, CSS, JS, jQuery, Swiper, Bootstrap, Wordpress, WPML, TypeRocket, Advanced Custom Field (ACF).',
+      ],
+    },
+    // Future UEH
+    {
+      name: [
+        '<a href="https://future.ueh.edu.vn/" target="_blank">https://future.ueh.edu.vn/</a>',
+      ],
+      size: 2,
+      detail: [
+        'Developed responsive WordPress themes with pixel-perfect precision from Figma Design.',
+        'Implemented SVG path animations and rotation effects using CSS transitions, JavaScript, and requestAnimationFrame to enhance visual feedback in user interfaces.',
+        'Worked with Google Sankey diagrams and customized path colors to enhance data visualization clarity and user experience.',
+        'Technical used: HTML, CSS, JS, jQuery, Swiper, Bootstrap, Wordpress, WPML, TypeRocket, Advanced Custom Field (ACF), Google Sankey API.',
       ],
     },
   ],
@@ -218,7 +235,7 @@ const projects: Record<string, Project[]> = {
       detail: [
         'Built custom WordPress themes by accurately translating Adobe XD layouts into code.',
         'Developed flexible, drag-and-drop page layout components in WordPress CMS using TypeRocket.',
-        '<strong>Technical used in projects:</strong> HTML, CSS, Javascript, jQuery, Swiper, Bootstrap, Wordpress, Woocommerce, TypeRocket, Advanced Custom Field (ACF).',
+        'Technical used: HTML, CSS, Javascript, jQuery, Swiper, Bootstrap, Wordpress, Woocommerce, TypeRocket, Advanced Custom Field (ACF).',
       ],
     },
     {
@@ -227,7 +244,7 @@ const projects: Record<string, Project[]> = {
       detail: [
         'Used HTML, CSS, and jQuery to translate Figma designs into responsive, user-friendly tools in close collaboration with UX designers.',
         "Utilized cookies to store and restore users' previous steps in multi-step processes.",
-        '<strong>Technical used in projects:</strong> HTML, CSS, Javascript, jQuery, Swiper, Bootstrap',
+        'Technical used: HTML, CSS, Javascript, jQuery, Swiper, Bootstrap',
       ],
     },
     {
@@ -236,7 +253,7 @@ const projects: Record<string, Project[]> = {
       detail: [
         'Built custom WordPress themes by accurately translating Adobe XD layouts into code.',
         'Built custom page layout functionality with drag-and-drop capability in WordPress, leveraging the TypeRocket plugin.',
-        '<strong>Technical used in projects:</strong> HTML, CSS, Javascript, jQuery, Swiper, Bootstrap, Wordpress, Woocommerce, TypeRocket, Advanced Custom Field (ACF).',
+        'Technical used: HTML, CSS, Javascript, jQuery, Swiper, Bootstrap, Wordpress, Woocommerce, TypeRocket, Advanced Custom Field (ACF).',
       ],
     },
   ],
@@ -246,7 +263,7 @@ const projects: Record<string, Project[]> = {
       size: 1,
       detail: [
         'Worked alongside UX designers to accurately implement Figma designs in building user-facing tools.',
-        '<strong>Technical used in projects:</strong> HTML, CSS, JS, jQuery, Swiper, Bootstrap, Wordpress, Advanced Custom Field (ACF).',
+        'Technical used: HTML, CSS, JS, jQuery, Swiper, Bootstrap, Wordpress, Advanced Custom Field (ACF).',
       ],
       note: '<i><strong>* Note:</strong></i> Munkas Agency is a social media company so each campaign has one website for each project. After the campaign ends, the site is no longer kept. So I cannot save all the domains for that project.',
     },
@@ -267,9 +284,9 @@ const ProjectSection = ({
       return <p dangerouslySetInnerHTML={{ __html: name }} />;
     }
     if (Array.isArray(name)) {
-      return name.map((n, index) => (
-        <ProjectName key={`${n}-${index}`} name={n} />
-      ));
+      return name.map((n, index) => {
+        return <ProjectName key={`${n}-${index}`} name={n} />;
+      });
     }
     return null;
   };
@@ -349,7 +366,7 @@ export const CV: FC = () => {
           <div className={styles.divider} />
           <div className={styles.infoContainer}>
             <div className={styles.infoLeft}>
-              <h3 className={styles.position}>Senior Front-end Developer</h3>
+              <h3 className={styles.position}>Senior Front-end Engineer</h3>
               <ul className={styles.list}>
                 {Object.keys(infos).map((k, itemIndex) => {
                   const key = k as keyof typeof infos;
@@ -391,6 +408,83 @@ export const CV: FC = () => {
             })}
           </ul>
         </div>
+        {/* ******************************************* WORK EXPERIENCE ******************************************* */}
+        <div className={clsx(styles.container, styles.workExperiences)}>
+          <h2 className={styles.title}>WORK EXPERIENCE</h2>
+          <div className={styles.divider} />
+          <table className={styles.table}>
+            <tbody>
+              {Object.keys(workExperiences).map((k, index) => {
+                const key = k as keyof typeof workExperiences;
+                const value = workExperiences[key];
+                return (
+                  <tr key={index.toString()}>
+                    <th className={clsx(styles.head30, styles.subtitle)}>
+                      {key}
+                    </th>
+                    <td className={styles.col}>
+                      <h4 className={styles.subtitle}>{value.company}</h4>
+                      <p className={styles.description}>
+                        My position: {value.position}
+                      </p>
+                      <h6 className={styles.listTitle}>
+                        Main responsibilities:
+                      </h6>
+                      <ul className={styles.list}>
+                        {value.list.map((item, itemIndex) => {
+                          return (
+                            <li
+                              key={itemIndex.toString()}
+                              dangerouslySetInnerHTML={{ __html: item }}
+                            />
+                          );
+                        })}
+                      </ul>
+                      {Object.keys(workExperiences).length - 1 > index && (
+                        <div className={styles.divider} />
+                      )}
+                    </td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
+        {/* ******************************************* PROJECTS ******************************************* */}
+        <div className={clsx(styles.container, styles.projects)}>
+          <h2 className={styles.title}>PROJECTS</h2>
+          <div className={styles.divider} />
+          {Object.keys(projects).map((title, index) => {
+            const prjs = projects[title as keyof typeof projects];
+            return (
+              <ProjectSection key={`${index}`} title={title} projects={prjs} />
+            );
+          })}
+        </div>
+        {/* ******************************************* SKILLS ******************************************* */}
+        <div className={clsx(styles.container, styles.skills)}>
+          <h2 className={styles.title}>SKILLS</h2>
+          <div className={styles.divider} />
+          {Object.keys(skills).map((k, index) => {
+            const key = k as keyof typeof skills;
+            const list = skills[key];
+            return (
+              <div key={index.toString()} className={styles.skill}>
+                <h4 className={styles.subtitle}>{key}</h4>
+                <ul className={styles.list}>
+                  {list.map((item, itemIndex) => {
+                    return (
+                      <li
+                        key={itemIndex.toString()}
+                        dangerouslySetInnerHTML={{ __html: item }}
+                      />
+                    );
+                  })}
+                </ul>
+              </div>
+            );
+          })}
+        </div>
         {/* ******************************************* EDUCATION ******************************************* */}
         <div className={clsx(styles.container, styles.educations)}>
           <h2 className={styles.title}>EDUCATION</h2>
@@ -424,81 +518,6 @@ export const CV: FC = () => {
               })}
             </tbody>
           </table>
-        </div>
-        {/* ******************************************* WORK EXPERIENCE ******************************************* */}
-        <div className={clsx(styles.container, styles.workExperiences)}>
-          <h2 className={styles.title}>WORK EXPERIENCE</h2>
-          <div className={styles.divider} />
-          <table className={styles.table}>
-            <tbody>
-              {Object.keys(workExperiences).map((k, index) => {
-                const key = k as keyof typeof workExperiences;
-                const value = workExperiences[key];
-                return (
-                  <tr key={index.toString()}>
-                    <th className={styles.head30}>{key}</th>
-                    <td className={styles.col}>
-                      <h4 className={styles.subtitle}>{value.company}</h4>
-                      <p className={styles.description}>
-                        My position: <strong>{value.position}</strong>
-                      </p>
-                      <h6 className={styles.listTitle}>
-                        Main responsibilities:
-                      </h6>
-                      <ul className={styles.list}>
-                        {value.list.map((item, itemIndex) => {
-                          return (
-                            <li
-                              key={itemIndex.toString()}
-                              dangerouslySetInnerHTML={{ __html: item }}
-                            />
-                          );
-                        })}
-                      </ul>
-                      {Object.keys(workExperiences).length - 1 > index && (
-                        <div className={styles.divider} />
-                      )}
-                    </td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
-        {/* ******************************************* SKILLS ******************************************* */}
-        <div className={clsx(styles.container, styles.skills)}>
-          <h2 className={styles.title}>SKILLS</h2>
-          <div className={styles.divider} />
-          {Object.keys(skills).map((k, index) => {
-            const key = k as keyof typeof skills;
-            const list = skills[key];
-            return (
-              <div key={index.toString()} className={styles.skill}>
-                <h4 className={styles.subtitle}>{key}</h4>
-                <ul className={styles.list}>
-                  {list.map((item, itemIndex) => {
-                    return (
-                      <li
-                        key={itemIndex.toString()}
-                        dangerouslySetInnerHTML={{ __html: item }}
-                      />
-                    );
-                  })}
-                </ul>
-              </div>
-            );
-          })}
-        </div>
-        {/* ******************************************* PROJECTS ******************************************* */}
-        <div className={clsx(styles.container, styles.projects)}>
-          <h2 className={styles.title}>PROJECTS</h2>
-          <div className={styles.divider} />
-          {Object.keys(projects).map((title, index) => {
-            const prjs = projects[title as keyof typeof projects];
-            return (
-              <ProjectSection key={`${index}`} title={title} projects={prjs} />
-            );
-          })}
         </div>
       </div>
     </div>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hiệu Ứng Bông Tua Bay Lên Như Pháo Hoa</title>
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background: #fffaf5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #fireworkBtn {
+        padding: 15px 30px;
+        font-size: 18px;
+        background-color: #ff4081;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        position: relative;
+        z-index: 10;
+      }
+
+      .pom {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-image: url('./public/flower-svgrepo-com.svg'); /* Ảnh bông tua */
+        background-size: cover;
+        pointer-events: none;
+        animation: shootUp 1s ease-out forwards;
+      }
+
+      @keyframes shootUp {
+        0% {
+          transform: translate(0, 0) scale(1) rotate(0deg);
+          opacity: 1;
+        }
+        100% {
+          transform: translate(var(--dx), var(--dy)) scale(0.6) rotate(720deg);
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <button id="fireworkBtn">🎆 Chúc Mừng 🎆</button>
+
+    <script>
+      function fireUpFromElement(element) {
+        const rect = element.getBoundingClientRect();
+        const originX = rect.left + rect.width / 2;
+        const originY = rect.top + rect.height / 2;
+
+        for (let i = 0; i < 20; i++) {
+          const pom = document.createElement('div');
+          pom.classList.add('pom');
+
+          pom.style.left = originX + 'px';
+          pom.style.top = originY + 'px';
+
+          const angle = ((Math.random() - 0.5) * Math.PI) / 2; // Góc ngẫu nhiên khoảng 90° hướng lên
+          const distance = Math.random() * 100 + 80;
+
+          const dx = Math.cos(angle) * distance + 'px';
+          const dy = -Math.abs(Math.sin(angle) * distance) + 'px'; // Luôn bay lên
+
+          pom.style.setProperty('--dx', dx);
+          pom.style.setProperty('--dy', dy);
+
+          document.body.appendChild(pom);
+
+          setTimeout(() => {
+            pom.remove();
+          }, 1000);
+        }
+      }
+
+      document
+        .getElementById('fireworkBtn')
+        .addEventListener('click', function () {
+          fireUpFromElement(this);
+        });
+    </script>
+  </body>
+</html>

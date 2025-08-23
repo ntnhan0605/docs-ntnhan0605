@@ -3,12 +3,7 @@ class/struct
 	attributes / properties / data members / thuộc tính
 """
 
-def gcb(a, b):
-	while b != 0:
-		reminder = a % b
-		a = b
-		b = reminder
-	return a
+
 
 class Fraction:
 	# initialize
@@ -31,9 +26,18 @@ class Fraction:
 		ans.reduceFraction()
 		return ans
 	
+	def gcb(self):
+		a = self.num
+		b = self.denom
+		while b != 0:
+			reminder = a % b
+			a = b
+			b = reminder
+		return a
+
 	# reduceFraction
 	def reduceFraction(self):
-		c = gcb(self.num, self.denom)
+		c = self.gcb(self.num, self.denom)
 		self.num //= c
 		self.denom //= c
 
