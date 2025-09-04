@@ -1,25 +1,22 @@
-import sys
-sys.setrecursionlimit(1_000_001)
-
 class Node:
-	def __init__(self, x, left = None, right = None):
+	def __init__(self, x, Left = None, Right = None):
 		self.data = x
-		self.left = left
-		self.right = right
+		self.left = Left
+		self.right = Right
 	
-	def addToNode(self, x):
+	def addToNodeBST(self, x):
 		if x < self.data:
 			if not self.left:
 				p = Node(x)
 				self.left = p
 			else:
-				self.left.addToNode(x)
+				self.left.addToNodeBST(x)
 		elif x > self.data:
 			if not self.right:
 				p = Node(x)
 				self.right = p
 			else:
-				self.right.addToNode(x)
+				self.right.addToNodeBST(x)
 
 class BST:
 	def __init__(self):
@@ -29,12 +26,18 @@ class BST:
 		if not self.root:
 			self.root = Node(x)
 			return
-		self.root.addToNode(x)
+		self.root.addToNodeBST(x)
 
-def FindTheMinimumElement(root):
-	if not root.left:
-		return root.data
-	return FindTheMinimumElement(root.left)
+def PrintIncrementaly(root, ans = ""):
+	if root.left:
+		ans += PrintIncrementaly(root.left)
+
+	ans += str(root.data) + " "
+
+	if root.right:
+		ans += PrintIncrementaly(root.right)
+
+	return ans
 
 
 n = int(input())
@@ -43,4 +46,4 @@ bst = BST()
 for i in range(n):
 	bst.addToBST(arr[i])
 
-print(FindTheMinimumElement(bst.root))
+print(PrintIncrementaly(bst.root))
