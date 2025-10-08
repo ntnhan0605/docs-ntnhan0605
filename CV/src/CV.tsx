@@ -333,9 +333,9 @@ const ProjectSection = ({
       <table className={clsx(styles.table, styles.bordered)}>
         <tbody>
           <tr>
-            <th>App/Tool Name</th>
-            <th>Team size</th>
-            <th>Detail</th>
+            <th className="w-[25%]">App/Tool Name</th>
+            <th className="w-[10%]">Team size</th>
+            <th className="w-[65%]">Detail</th>
           </tr>
           {projects.map((project, index) => {
             const { name, size, detail, note } = project;
