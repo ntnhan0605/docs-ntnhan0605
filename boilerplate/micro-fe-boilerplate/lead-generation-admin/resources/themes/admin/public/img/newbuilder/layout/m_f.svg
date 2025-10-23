@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="108" height="205" viewBox="0 0 108 205">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7db6f7;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #ededed;
+      }
+
+      .cls-4 {
+        fill: #2699fb;
+      }
+
+      .cls-10, .cls-5, .cls-8 {
+        fill: none;
+      }
+
+      .cls-5 {
+        stroke: #ededed;
+      }
+
+      .cls-5, .cls-8 {
+        stroke-width: 0.5px;
+      }
+
+      .cls-6 {
+        fill: #f1f9ff;
+      }
+
+      .cls-7 {
+        fill: #005cfd;
+      }
+
+      .cls-8 {
+        stroke: #fff;
+        stroke-linecap: round;
+      }
+
+      .cls-9 {
+        stroke: none;
+      }
+
+      .cls-11 {
+        filter: url(#Rectangle_1876);
+      }
+    </style>
+    <filter id="Rectangle_1876" x="0" y="12.5" width="108" height="186" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4.5" result="blur"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1513" data-name="Group 1513" transform="translate(-1122.5 -279)">
+    <rect id="Rectangle_1873" data-name="Rectangle 1873" class="cls-1" width="93" height="205" transform="translate(1130 279)"/>
+    <g class="cls-11" transform="matrix(1, 0, 0, 1, 1122.5, 279)">
+      <rect id="Rectangle_1876-2" data-name="Rectangle 1876" class="cls-2" width="81" height="159" transform="translate(13.5 22)"/>
+    </g>
+    <rect id="Rectangle_1884" data-name="Rectangle 1884" class="cls-3" width="54" height="6" rx="3" transform="translate(1150 376)"/>
+    <rect id="Rectangle_1877" data-name="Rectangle 1877" class="cls-4" width="40" height="10" rx="5" transform="translate(1157 439)"/>
+    <rect id="Rectangle_1885" data-name="Rectangle 1885" class="cls-3" width="65" height="3" rx="1.5" transform="translate(1144 387)"/>
+    <g id="Rectangle_1878" data-name="Rectangle 1878" class="cls-5" transform="translate(1140 402)">
+      <rect class="cls-9" width="73" height="10" rx="5"/>
+      <rect class="cls-10" x="0.25" y="0.25" width="72.5" height="9.5" rx="4.75"/>
+    </g>
+    <g id="Rectangle_1879" data-name="Rectangle 1879" class="cls-5" transform="translate(1140 419)">
+      <rect class="cls-9" width="73" height="10" rx="5"/>
+      <rect class="cls-10" x="0.25" y="0.25" width="72.5" height="9.5" rx="4.75"/>
+    </g>
+    <rect id="Rectangle_1886" data-name="Rectangle 1886" class="cls-6" width="73" height="57" transform="translate(1140 308)"/>
+    <g id="Group_1737" data-name="Group 1737" transform="translate(716.9 -384.734)">
+      <circle id="Ellipse_482" data-name="Ellipse 482" class="cls-7" cx="6" cy="6" r="6" transform="translate(492.1 680.735)"/>
+      <line id="Line_242" data-name="Line 242" class="cls-8" x2="4" y2="4" transform="translate(496.1 684.735)"/>
+      <line id="Line_243" data-name="Line 243" class="cls-8" x1="4" y2="4" transform="translate(496.1 684.735)"/>
+    </g>
+  </g>
+</svg>

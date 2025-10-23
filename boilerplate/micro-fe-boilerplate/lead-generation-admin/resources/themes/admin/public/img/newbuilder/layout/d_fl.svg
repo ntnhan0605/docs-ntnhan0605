@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="391.5" height="226.5" viewBox="0 0 391.5 226.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7db6f7;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #2699fb;
+      }
+
+      .cls-4 {
+        fill: #005cfd;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 0.5px;
+      }
+
+      .cls-6 {
+        filter: url(#Ellipse_482);
+      }
+
+      .cls-7 {
+        filter: url(#Rectangle_1481);
+      }
+    </style>
+    <filter id="Rectangle_1481" x="0" y="177.5" width="282" height="49" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4.5" result="blur"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_482" x="253.5" y="172.001" width="30" height="30" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1526" data-name="Group 1526" transform="translate(-213.5 -1502)">
+    <rect id="Rectangle_1903" data-name="Rectangle 1903" class="cls-1" width="388" height="219" transform="translate(217 1502)"/>
+    <g class="cls-7" transform="matrix(1, 0, 0, 1, 213.5, 1502)">
+      <rect id="Rectangle_1481-2" data-name="Rectangle 1481" class="cls-2" width="255" height="22" transform="translate(13.5 187)"/>
+    </g>
+    <rect id="Rectangle_1483" data-name="Rectangle 1483" class="cls-3" width="30" height="8" rx="4" transform="translate(439 1696)"/>
+    <g id="Group_933" data-name="Group 933" transform="translate(-16.1 1002.266)">
+      <g class="cls-6" transform="matrix(1, 0, 0, 1, 229.6, 499.73)">
+        <circle id="Ellipse_482-2" data-name="Ellipse 482" class="cls-4" cx="6" cy="6" r="6" transform="translate(262.5 181)"/>
+      </g>
+      <line id="Line_242" data-name="Line 242" class="cls-5" x2="4" y2="4" transform="translate(496.1 684.735)"/>
+      <line id="Line_243" data-name="Line 243" class="cls-5" x1="4" y2="4" transform="translate(496.1 684.735)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="217.5" viewBox="0 0 120 217.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7db6f7;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #2699fb;
+      }
+
+      .cls-4 {
+        fill: #ededed;
+      }
+
+      .cls-5 {
+        fill: #005cfd;
+      }
+
+      .cls-6 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 0.5px;
+      }
+
+      .cls-7 {
+        filter: url(#Ellipse_482);
+      }
+
+      .cls-8 {
+        filter: url(#Path_263);
+      }
+    </style>
+    <filter id="Path_263" x="0" y="168.539" width="120" height="48.961" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="4.5" result="blur"/>
+      <feFlood flood-opacity="0.302"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_482" x="83.5" y="159.001" width="30" height="30" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.4"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_1525" data-name="Group 1525" transform="translate(-535.5 -1572)">
+    <rect id="Rectangle_1909" data-name="Rectangle 1909" class="cls-1" width="93" height="204" transform="translate(549 1572)"/>
+    <g class="cls-8" transform="matrix(1, 0, 0, 1, 535.5, 1572)">
+      <path id="Path_263-2" data-name="Path 263" class="cls-2" d="M0,0H93V21.961H0Z" transform="translate(13.5 182.04)"/>
+    </g>
+    <rect id="Rectangle_1400" data-name="Rectangle 1400" class="cls-3" width="20" height="6" rx="3" transform="translate(612 1764)"/>
+    <rect id="Rectangle_2014" data-name="Rectangle 2014" class="cls-4" width="48" height="3" rx="1.5" transform="translate(556 1761)"/>
+    <rect id="Rectangle_2015" data-name="Rectangle 2015" class="cls-4" width="35" height="3" rx="1.5" transform="translate(556 1767)"/>
+    <g id="Group_934" data-name="Group 934" transform="translate(135.9 1059.266)">
+      <g class="cls-7" transform="matrix(1, 0, 0, 1, 399.6, 512.73)">
+        <circle id="Ellipse_482-2" data-name="Ellipse 482" class="cls-5" cx="6" cy="6" r="6" transform="translate(92.5 168)"/>
+      </g>
+      <line id="Line_242" data-name="Line 242" class="cls-6" x2="4" y2="4" transform="translate(496.1 684.735)"/>
+      <line id="Line_243" data-name="Line 243" class="cls-6" x1="4" y2="4" transform="translate(496.1 684.735)"/>
+    </g>
+  </g>
+</svg>

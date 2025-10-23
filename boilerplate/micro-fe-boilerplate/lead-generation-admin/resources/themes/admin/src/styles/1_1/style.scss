@@ -1,0 +1,230 @@
+.bg-f8 {
+  background: #f8f8f8;
+}
+
+.color-black-2 {
+  color: #1b3250;
+}
+
+.text-16 {
+  font-size: 16px;
+}
+
+.le-fullpage-sidebar {
+  min-width: 230px;
+  background: #f8f8f8;
+  padding-top: 36px;
+  min-height: calc(100vh - 97px);
+}
+
+.le-sidebar-item {
+  padding: 17px 0;
+  color: #1b3250;
+  border-right: 2px solid transparent;
+  transition: all 0.15s ease-in-out;
+  font-size: 15px;
+  img {
+    margin-right: 12px;
+  }
+  span {
+    min-width: 115px;
+  }
+  &:hover,
+  &.le-active {
+    padding-left: 20px;
+    cursor: pointer;
+    background: #eeeeee;
+    border-right: 2px solid #3389f0;
+    span {
+      color: #3389f0;
+      font-weight: 600;
+    }
+  }
+}
+
+.le-page {
+  height: 100%;
+  padding-top: calc(var(--le-nav-offset-top) - 15px);
+}
+
+.le-button-tablist {
+  button {
+    padding: 6px 20px;
+    background: #dadada;
+    line-height: 1.5;
+    font-size: 15px;
+    border-radius: 8px;
+    color: white;
+    &.le-active {
+      background: #3389f0;
+    }
+  }
+}
+
+.le-trigger-item {
+  padding-left: 10px;
+  padding-right: 10px;
+  border: solid 1px transparent;
+
+  &.le-active {
+    border-radius: 5px;
+    border: solid 1px #3389f0;
+    background-color: #fffbfb;
+  }
+}
+
+.le-has-arrow {
+  &.arrow-right-black {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 18px;
+      right: 25px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 8px 6px 0 6px;
+      border-color: #1b3250 transparent transparent transparent;
+    }
+  }
+  &.arrow-right-black-select {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 20px;
+      right: 15px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 8px 6px 0 6px;
+      border-color: #1b3250 transparent transparent transparent;
+    }
+  }
+}
+
+.vue-dropzone {
+  border: 1px dashed #979797;
+  border-radius: 8px;
+}
+
+.le-drop-file-list {
+  .dz-preview {
+    transition: all 0.3s ease-in-out;
+  }
+  .dz-details {
+    width: 100%;
+  }
+
+  .dz-processing {
+    cursor: wait;
+  }
+  .dz-complete {
+    cursor: initial;
+  }
+
+  .dz-success-mark,
+  .dz-error-mark,
+  .dz-remove-btn {
+    display: none;
+  }
+
+  .dz-upload {
+    background: linear-gradient(270deg, #3389f0, #6ea8ee, #ffffff);
+    background-size: 400% 400%;
+    animation: loadingBar 0.85s ease infinite;
+    height: 5px;
+    border-radius: 6px;
+  }
+
+  .dz-complete.dz-error {
+    .dz-progress,
+    .dz-success-mark,
+    .dz-success-message,
+    .dz-size {
+      display: none;
+    }
+    .dz-details {
+      width: auto;
+    }
+  }
+
+  .dz-complete.dz-success {
+    .dz-success-mark,
+    .dz-remove-btn {
+      display: block;
+    }
+    .dz-upload {
+      background: #00a335;
+      animation: none;
+    }
+  }
+
+  .dz-complete.dz-error {
+    .dz-error-mark,
+    .dz-remove-btn {
+      display: block;
+    }
+    .dz-filename {
+      color: #3389f0;
+    }
+  }
+}
+
+@keyframes loadingBar {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.calendar-time {
+  select {
+    padding-left: 15px !important;
+  }
+}
+
+.daterangepicker td.in-range {
+  color: #455997;
+  background: #edf4ff;
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
+  background-color: #488dff;
+  color: white;
+}
+
+.daterangepicker {
+  .applyBtn {
+    border-radius: 2px;
+    background-color: #488dff;
+    color: white;
+    padding: 15px !important;
+  }
+}
+
+.daterangepicker td {
+  height: 35px !important;
+  width: 35px !important;
+}
+
+.le-first-caps {
+  &::first-letter {
+    text-transform: capitalize;
+  }
+}
+
+.le-user-table {
+  .v-data-footer__select {
+    .v-select {
+      &::after {
+        display: none !important;
+      }
+    }
+  }
+}

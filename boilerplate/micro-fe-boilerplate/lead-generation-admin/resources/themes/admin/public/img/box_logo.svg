@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="175" height="30" viewBox="0 0 175 30">
+    <defs>
+        <rect id="prefix__a" width="175" height="30" x="63" y="26" rx="3"/>
+        <mask id="prefix__b" width="175" height="30" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
+            <use xlink:href="#prefix__a"/>
+        </mask>
+    </defs>
+    <use fill="#F2F2F2" fill-rule="evenodd" stroke="#D2D1D1" stroke-dasharray="6" stroke-linejoin="round" stroke-width="4" mask="url(#prefix__b)" transform="translate(-63 -26)" xlink:href="#prefix__a"/>
+</svg>

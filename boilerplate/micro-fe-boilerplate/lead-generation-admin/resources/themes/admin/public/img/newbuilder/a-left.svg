@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #707070;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Group_824" data-name="Group 824" transform="translate(-166.5 -425.5)">
+    <line id="Line_369" data-name="Line 369" class="cls-1" x2="20" transform="translate(167.5 426.5)"/>
+    <line id="Line_371" data-name="Line 371" class="cls-1" x2="10" transform="translate(167.5 431.5)"/>
+    <line id="Line_372" data-name="Line 372" class="cls-1" x2="10" transform="translate(167.5 441.5)"/>
+    <line id="Line_370" data-name="Line 370" class="cls-1" x2="20" transform="translate(167.5 436.5)"/>
+  </g>
+</svg>

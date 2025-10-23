@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="85" height="25" viewBox="0 0 85 25">
+    <g fill="none" fill-rule="evenodd">
+        <text fill="#B0B0B0" font-family="'Open sans', sans-serif" font-size="12">
+            <tspan x="22" y="17">Inactive</tspan>
+        </text>
+        <rect width="84" height="24" x=".5" y=".5" stroke="#D6D6D6" rx="12"/>
+
+    </g>
+</svg>

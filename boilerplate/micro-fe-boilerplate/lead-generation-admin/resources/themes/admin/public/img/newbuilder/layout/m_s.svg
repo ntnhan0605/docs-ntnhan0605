@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="93" height="204" viewBox="0 0 93 204">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7db6f7;
+      }
+
+      .cls-2 {
+        fill: #f1f9ff;
+      }
+
+      .cls-3 {
+        fill: #2699fb;
+      }
+
+      .cls-4 {
+        fill: #005cfd;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 0.5px;
+      }
+    </style>
+  </defs>
+  <g id="Group_1518" data-name="Group 1518" transform="translate(-549 -731)">
+    <path id="Path_776" data-name="Path 776" class="cls-1" d="M0,0H93V204H0Z" transform="translate(549 731)"/>
+    <rect id="Rectangle_1893" data-name="Rectangle 1893" class="cls-2" width="93" height="40" transform="translate(549 731)"/>
+    <rect id="Rectangle_1891" data-name="Rectangle 1891" class="cls-3" width="23" height="6" rx="3" transform="translate(606 748)"/>
+    <g id="Group_930" data-name="Group 930" transform="translate(136.9 51.266)">
+      <circle id="Ellipse_482" data-name="Ellipse 482" class="cls-4" cx="6" cy="6" r="6" transform="translate(492.1 680.735)"/>
+      <line id="Line_242" data-name="Line 242" class="cls-5" x2="4" y2="4" transform="translate(496.1 684.735)"/>
+      <line id="Line_243" data-name="Line 243" class="cls-5" x1="4" y2="4" transform="translate(496.1 684.735)"/>
+    </g>
+  </g>
+</svg>

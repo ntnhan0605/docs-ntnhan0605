@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14.96" height="15.167" viewBox="0 0 14.96 15.167">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #2c87f3;
+      }
+
+      .cls-1 {
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <g id="Group_1714" data-name="Group 1714" transform="translate(-15.567 -6.833)">
+    <g id="Group_653" data-name="Group 653" transform="translate(16.067 7.54)">
+      <line id="Line_292" data-name="Line 292" class="cls-1" y2="8.376" transform="translate(0 5.584)"/>
+      <line id="Line_293" data-name="Line 293" class="cls-1" x1="13.96" transform="translate(0 13.96)"/>
+      <line id="Line_294" data-name="Line 294" class="cls-1" y1="8.376" transform="translate(6.98)"/>
+      <line id="Line_295" data-name="Line 295" class="cls-1" y2="8.376" transform="translate(13.96 5.584)"/>
+      <line id="Line_332" data-name="Line 332" class="cls-2" transform="translate(5.584 1.396)"/>
+      <line id="Line_333" data-name="Line 333" class="cls-1" y1="2.792" x2="2.792" transform="translate(4.188)"/>
+      <line id="Line_334" data-name="Line 334" class="cls-1" x1="2.792" y1="2.792" transform="translate(6.98)"/>
+    </g>
+  </g>
+</svg>

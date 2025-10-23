@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import 'css-variable.scss';
+@import 'config.scss';
+/* @import 'animation.scss'; */
+@import 'custom-utils.scss';
+@import 'overwrite.scss';
+@import 'page.scss';
+@import 'custom-elements.scss';
+@import 'custom-libs.scss';
+@import './1_1/style.scss';
+@import './1_1/system-history.scss';
+@import './1_1/campaign-settings.scss';
+@import './1_1/component/select-site-modal.scss';
+@import './1_1/component/date-picker.scss';
+@import './1_1/component/le-table.scss';
+@import './1_1/component/le-select-time.scss';
+@import './1_1/account-settings.scss';
+@import './builder.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

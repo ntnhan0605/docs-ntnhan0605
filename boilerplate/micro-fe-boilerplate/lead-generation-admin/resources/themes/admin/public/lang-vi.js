@@ -1,0 +1,20 @@
+jQuery.extend(jQuery.validator.messages, {
+  required: 'Vui lòng điền mục này',
+  email: 'Vui lòng điền email có thật.',
+  number: 'Vui lòng điền số có thật',
+  digits: 'Vui lòng chỉ điền số',
+  maxlength: jQuery.validator.format('Vui lòng điền dưới {0} số'),
+  minlength: jQuery.validator.format('Vui lòng điền hơn {0} số'),
+  //
+  remote: 'Hãy sửa cho đúng.',
+  url: 'Hãy nhập URL.',
+  date: 'Hãy nhập ngày.',
+  dateISO: 'Hãy nhập ngày (ISO).',
+  creditcard: 'Hãy nhập số thẻ tín dụng.',
+  equalTo: 'Hãy nhập thêm lần nữa.',
+  extension: 'Phần mở rộng không đúng.',
+  rangelength: jQuery.validator.format('Hãy nhập từ {0} đến {1} kí tự.'),
+  range: jQuery.validator.format('Hãy nhập từ {0} đến {1}.'),
+  max: jQuery.validator.format('Hãy nhập từ {0} trở xuống.'),
+  min: jQuery.validator.format('Hãy nhập từ {0} trở lên.'),
+});

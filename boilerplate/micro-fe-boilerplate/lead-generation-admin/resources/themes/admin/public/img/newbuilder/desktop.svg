@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="26.15" viewBox="0 0 28 26.15">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #fff;
+      }
+
+      .cls-3 {
+        stroke-linecap: round;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_416" data-name="Group 416" transform="translate(-1249 -124)">
+    <rect id="shape-copy_3x" data-name="shape-copy@3x" class="cls-1" width="27" height="26" transform="translate(1250 124)"/>
+    <g id="Rectangle_1357" data-name="Rectangle 1357" class="cls-2" transform="translate(1249 124)">
+      <rect class="cls-4" width="28" height="21" rx="2"/>
+      <rect class="cls-1" x="0.5" y="0.5" width="27" height="20" rx="1.5"/>
+    </g>
+    <line id="Line_246" data-name="Line 246" class="cls-3" x2="13" transform="translate(1256.5 149.5)"/>
+    <g id="Group_378" data-name="Group 378" transform="translate(-28.5 12)">
+      <path id="Path_536" data-name="Path 536" class="cls-3" d="M2,0,1.125,2.188,1,2.5,0,5" transform="translate(1288.5 132.5)"/>
+      <line id="Line_248" data-name="Line 248" class="cls-3" x2="2" y2="5" transform="translate(1292.5 132.5)"/>
+    </g>
+    <line id="Line_249" data-name="Line 249" class="cls-2" x2="27" transform="translate(1249.5 140.5)"/>
+    <line id="Line_250" data-name="Line 250" class="cls-3" x2="1" transform="translate(1262.5 142.5)"/>
+  </g>
+</svg>

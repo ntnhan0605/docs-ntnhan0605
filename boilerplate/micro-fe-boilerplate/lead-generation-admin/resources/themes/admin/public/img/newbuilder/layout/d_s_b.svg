@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="388" height="219" viewBox="0 0 388 219">
+  <defs>
+    <style>
+      .cls-1, .cls-7 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-width: 0.5px;
+      }
+
+      .cls-1 {
+        stroke: #6b6b6b;
+      }
+
+      .cls-2 {
+        fill: #ededed;
+      }
+
+      .cls-3 {
+        fill: #7db6f7;
+      }
+
+      .cls-4 {
+        fill: #f1f9ff;
+      }
+
+      .cls-5 {
+        fill: #2699fb;
+      }
+
+      .cls-6 {
+        fill: #005cfd;
+      }
+
+      .cls-7 {
+        stroke: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_1510" data-name="Group 1510" transform="translate(-805 -648)">
+    <g id="Group_393" data-name="Group 393" transform="translate(856.42 651.354)">
+      <line id="Line_242" data-name="Line 242" class="cls-1" x2="5" y2="5" transform="translate(-0.42 -0.353)"/>
+      <line id="Line_243" data-name="Line 243" class="cls-1" x1="5" y2="5" transform="translate(-0.42 -0.353)"/>
+    </g>
+    <line id="Line_242-2" data-name="Line 242" class="cls-1" x2="5" y2="6" transform="translate(1183 652)"/>
+    <line id="Line_243-2" data-name="Line 243" class="cls-1" x1="5" y2="6" transform="translate(1183 652)"/>
+    <rect id="Rectangle_1472" data-name="Rectangle 1472" class="cls-2" width="48" height="6" rx="3" transform="translate(976 664)"/>
+    <rect id="Rectangle_1463" data-name="Rectangle 1463" class="cls-3" width="388" height="219" transform="translate(805 648)"/>
+    <rect id="Rectangle_1439" data-name="Rectangle 1439" class="cls-4" width="388" height="58" transform="translate(805 648)"/>
+    <rect id="Rectangle_1444" data-name="Rectangle 1444" class="cls-5" width="37" height="10" rx="5" transform="translate(1110 672)"/>
+    <g id="Group_931" data-name="Group 931" transform="translate(685.9 -29.734)">
+      <circle id="Ellipse_482" data-name="Ellipse 482" class="cls-6" cx="6" cy="6" r="6" transform="translate(492.1 680.735)"/>
+      <line id="Line_242-3" data-name="Line 242" class="cls-7" x2="4" y2="4" transform="translate(496.1 684.735)"/>
+      <line id="Line_243-3" data-name="Line 243" class="cls-7" x1="4" y2="4" transform="translate(496.1 684.735)"/>
+    </g>
+  </g>
+</svg>

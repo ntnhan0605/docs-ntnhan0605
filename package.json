@@ -1,0 +1,12 @@
+{
+  "name": "@ntnhan0605/learn",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ntnhan0605/Learn.git",
+  "author": "Nhan Nguyen <ntnhan0605@gmail.com>",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ]
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #656565;
+        stroke-width: 0.5px;
+      }
+
+      .cls-2 {
+        fill: #656565;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_477" data-name="Group 477" transform="translate(0.082 -0.185)">
+    <g id="Rectangle_1583" data-name="Rectangle 1583" class="cls-1" transform="translate(-0.082 0.185)">
+      <rect class="cls-3" width="14" height="14"/>
+      <rect class="cls-4" x="0.25" y="0.25" width="13.5" height="13.5"/>
+    </g>
+    <g id="Group_476" data-name="Group 476" transform="translate(1.874 4.685)">
+      <path id="Polygon_17" data-name="Polygon 17" class="cls-2" d="M2.5,0,5,4H0Z" transform="translate(0.044 1.5)"/>
+      <path id="Polygon_18" data-name="Polygon 18" class="cls-2" d="M4,0,8,5H0Z" transform="translate(3.044 0.5)"/>
+    </g>
+    <circle id="Ellipse_500" data-name="Ellipse 500" class="cls-2" cx="1" cy="1" r="1" transform="translate(3.918 3.185)"/>
+  </g>
+</svg>

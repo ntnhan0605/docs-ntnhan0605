@@ -1,0 +1,4 @@
+export const CAMPAIGN_EXTRA_FIELDS = {
+  TITLE: 'TITLE',
+  SUBMIT: 'SUBMIT',
+};

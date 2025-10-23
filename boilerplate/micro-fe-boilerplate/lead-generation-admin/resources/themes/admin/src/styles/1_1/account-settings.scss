@@ -1,0 +1,53 @@
+.le-more-country {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  color: #2699fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: help;
+}
+
+.le-img-margin-minus {
+  margin-left: -5px;
+}
+
+.le-role-circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex: 0 0 10px;
+  margin-right: 10px;
+  &.role-1 {
+    background: #ff9100;
+  }
+  &.role-2 {
+    background-color: #4ed7e6;
+  }
+  &.role-3 {
+    background-color: #8b18c6;
+  }
+}
+
+.le-top-search {
+  border-radius: 5px;
+  border: solid 1px #dadada;
+  background-color: #ffffff;
+  padding: 7px 15px;
+  min-width: 320px;
+}
+.le-button-search {
+  min-width: 45px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #2c87f3;
+}
+
+.le-search-client {
+  padding: 5px 10px;
+  border-radius: 2px;
+  border: solid 1px #f7f7f7;
+  background-color: #f0f0f0;
+}

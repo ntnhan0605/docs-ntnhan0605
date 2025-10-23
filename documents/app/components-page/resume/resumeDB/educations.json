@@ -1,0 +1,41 @@
+[
+  {
+    "school": "Big-O Coding",
+    "location": "HCMC, Vietnam",
+    "terms": [
+      {
+        "term": "Jul 2025 - Aug 2025",
+        "degree": "Certificate",
+        "education_level": "vocational",
+        "field_of_study": "BIG-O GREEN: Elementary Algorithms",
+        "gpa": ""
+      }
+    ]
+  },
+  {
+    "school": "IT Center – University of Science, VNU-HCM",
+    "location": "HCMC, Vietnam",
+    "terms": [
+      {
+        "term": "Dec 2019 – Apr 2020",
+        "degree": "Certificate",
+        "education_level": "vocational",
+        "field_of_study": "Basic Programming & Database",
+        "gpa": "9.5"
+      }
+    ]
+  },
+  {
+    "school": "University of Technology and Education, HCMUTE",
+    "location": "HCMC, Vietnam",
+    "terms": [
+      {
+        "term": "Sep 2012 – Sep 2015",
+        "degree": "Bachelor of Engineering",
+        "education_level": "associate",
+        "field_of_study": "Automotive Engineering Technology",
+        "gpa": "7.8"
+      }
+    ]
+  }
+]

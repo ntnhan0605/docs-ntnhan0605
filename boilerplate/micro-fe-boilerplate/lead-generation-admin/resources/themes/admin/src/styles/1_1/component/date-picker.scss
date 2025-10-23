@@ -1,0 +1,67 @@
+.le-date-picker {
+  border: none;
+  width: 100%;
+  .vc-text-blue-900 {
+    color: #0a54ae;
+    font-weight: normal;
+  }
+  .vc-bg-blue-600 {
+    background-color: #488dff;
+  }
+  .vc-bg-blue-200 {
+    background-color: #488dff;
+    opacity: 0.1;
+  }
+  .text-light-blue {
+    color: #a7b9f0;
+    font-weight: normal;
+  }
+  .text-red {
+    color: #ff5353;
+    font-weight: normal;
+  }
+  .text-deep-blue {
+    color: #455997;
+    font-weight: normal;
+  }
+  .vc-weekday {
+    color: #606060;
+    font-weight: normal;
+  }
+  .vc-header {
+    padding-bottom: 20px;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 95%;
+      transform: translate(-50%, 0);
+      border-bottom: 1px solid #9d9d9d;
+    }
+  }
+  .vc-grid-cell.vc-grid-cell-row-6.vc-grid-cell-row--2 {
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      border-bottom: 1px solid #9d9d9d;
+    }
+  }
+  .vc-title {
+    color: #3389f0;
+  }
+  .vc-w-full {
+    border-radius: 3px;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
+  }
+  .vc-popover-content {
+    border: none;
+  }
+  > input {
+    display: none;
+  }
+}

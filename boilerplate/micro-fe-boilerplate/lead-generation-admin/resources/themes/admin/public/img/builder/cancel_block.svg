@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="270" height="45" viewBox="0 0 270 45">
+    <defs>
+        <rect id="prefix__a" width="270" height="45" x="0" y="0" rx="3"/>
+        <mask id="prefix__b" width="270" height="45" x="0" y="0" fill="#fff" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox">
+            <use xlink:href="#prefix__a"/>
+        </mask>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use fill="#F2F2F2" stroke="#3389F0" stroke-dasharray="6" stroke-width="2" mask="url(#prefix__b)" xlink:href="#prefix__a"/>
+        <path fill="#3389F0" fill-rule="nonzero" d="M145.607 11.393c-5.859-5.858-15.355-5.858-21.214 0-5.858 5.859-5.858 15.355 0 21.214 5.859 5.858 15.356 5.857 21.214 0 5.857-5.858 5.858-15.355 0-21.214zm-19.888 19.888c-5.125-5.126-5.125-13.436 0-18.562 5.126-5.125 13.436-5.125 18.562 0 5.125 5.126 5.125 13.436 0 18.562-5.126 5.125-13.436 5.125-18.562 0zm13.921-5.966L136.326 22l3.314-3.315c.366-.365.366-.96 0-1.325-.366-.366-.96-.366-1.325 0L135 20.674l-3.315-3.314c-.365-.366-.96-.366-1.325 0-.366.366-.366.96 0 1.325L133.674 22l-3.314 3.315c-.366.365-.366.96 0 1.325.366.366.96.366 1.325 0L135 23.326l3.315 3.314c.365.366.96.366 1.325 0 .366-.366.366-.96 0-1.325z"/>
+    </g>
+</svg>
