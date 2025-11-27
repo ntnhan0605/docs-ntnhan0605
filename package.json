@@ -8,5 +8,8 @@
   "license": "MIT",
   "workspaces": [
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "express": "^5.1.0"
+  }
 }

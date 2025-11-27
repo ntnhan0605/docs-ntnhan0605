@@ -6,6 +6,8 @@ const routes: RouteConfig = [
   route('resume', './routes/resume.tsx'),
   /** React Routes */
   ...(await flatRoutes({ rootDirectory: './routes/react' })),
+  /** Javascript Advanced */
+  ...(await flatRoutes({ rootDirectory: './routes/javascript-advanced' })),
 ];
 
 export default routes;
