@@ -11,6 +11,7 @@
         "details": [
           "Built vaccine list (with filtering), detail, and payment modules, integrating voucher and referral workflows through backend APIs",
           "Used Zustand store to synchronize voucher/referral data and shared state across multiple React components",
+          "Developed a unified payment module integrating MoMo, VNPay, ZaloPay, Visa, and ATM gateways, implementing secure APIs, validation, and optimized payment UX.",
           "<b>Team size : </b> 6 (2 FE, 1 BE, 1 PM, 1 QC, 1 Designer)",
           "<b>Tech stacks : </b> Next.js, React.js, Format.js, Zustand, Mantine V6, Tailwind CSS, Typescript"
         ]
