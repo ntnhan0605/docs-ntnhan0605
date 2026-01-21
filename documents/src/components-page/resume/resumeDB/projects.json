@@ -1,0 +1,204 @@
+[
+  {
+    "company": "Hello Health Group",
+    "location": "HCMC, Vietnam",
+    "projects": [
+      {
+        "term": "Jan 2025 - Oct 2025",
+        "name": [
+          { "name": "Hello Care", "href": "https://hellobacsi.com/care/" }
+        ],
+        "details": [
+          "Built vaccine list (with filtering), detail, and payment modules, integrating voucher and referral workflows through backend APIs",
+          "Used Zustand store to synchronize voucher/referral data and shared state across multiple React components",
+          "Developed a unified payment module integrating MoMo, VNPay, ZaloPay, Visa, and ATM gateways, implementing secure APIs, validation, and optimized payment UX.",
+          "<b>Team size : </b> 6 (2 FE, 1 BE, 1 PM, 1 QC, 1 Designer)",
+          "<b>Tech stacks : </b> Next.js, React.js, Format.js, Zustand, Mantine V6, Tailwind CSS, Typescript"
+        ]
+      },
+      {
+        "term": "May 2024 - Oct 2025",
+        "name": [
+          {
+            "name": "Hello Discover (Health tools/Risk Screener)",
+            "href": "https://hellobacsi.com/health-tools/"
+          }
+        ],
+        "details": [
+          "Revamped Health Tool modules (BMI, BMR, Ovulation, Heart Rate, Risk Screener, etc.) with the design team to enhance UI/UX",
+          "Used React Context to manage and share state across multiple nested React components",
+          "Implemented form validation and translated error messages in the Health Tool using React Hook Form and Format.js",
+          "Maintained and monitored website infrastructure and analytics to ensure optimal SEO visibility and Google AdSense performance",
+          "<b>Team size : </b> 6 (1 FE, 1 BE, 1 PM, 1 QC, 2 Designer)",
+          "<b>Tech stacks : </b> Next.js, React.js, Format.js, React Hook Form, Mantine V6, Tailwind CSS, Typescript"
+        ]
+      },
+      {
+        "term": "May 2023 - May 2024",
+        "name": [
+          {
+            "name": "Hello Leadgen Tool",
+            "href": "https://lead.hellohealthgroup.com/"
+          }
+        ],
+        "details": [
+          "Maintained and enhanced features in the Leadgen Admin Tool using Vue.js 2 to improve stability and user experience",
+          "Revamped the Leadgen Tool displayed on Hello Discover, implementing form validation and localized error messages using Mantine Form",
+          "<b>Team size : </b> 5 (1 FE, 1 BE, 1 PM, 1 QC, 1 Designer)",
+          "<b>Tech stacks : </b> Vue.js V2, React.js, Mantine V6, Tailwind CSS, Typescript"
+        ]
+      },
+      {
+        "term": "May 2022 - May 2023",
+        "name": [
+          {
+            "name": "Hello Sidis",
+            "href": "https://sidis.hellohealthgroup.com/"
+          }
+        ],
+        "details": [
+          "Built React form components integrated with RESTful APIs to segment data from Google BigQuery, enhancing user productivity",
+          "Built step-by-step React components for campaign creation and integrated RESTful APIs to manage data for campaign types including Zalo, WhatsApp, Twilio, SMS (VNPT), Web Push, and App Push",
+          "Used React Flow to build visual workflow components for creating multi-campaign triggers with grouped, sequential conditions",
+          "Built drag-and-drop React components for a flexible analytics dashboard using Muuri, and integrated a user-sharing flow with backend RESTful APIs",
+          "<b>Team size : </b> 8 (2 FE, 3 BE, 1 PM, 1 QC, 1 Designer)",
+          "<b>Tech stacks : </b> React.js, Ant Design, D3-Hierarchy, Zustand, Tailwind CSS, Muuri, React Flow, Recharts, Highcharts, Typescript"
+        ]
+      },
+      {
+        "term": "May 2021 - May 2022",
+        "name": [
+          {
+            "name": "Hello Subot (Risk Screener)",
+            "href": "https://subot.hellohealthgroup.com/"
+          }
+        ],
+        "details": [
+          "Revamped the Subot Admin Tool using React.js and TypeScript, migrating state management from Easy Peasy v3 to Redux integrated with RxJS for improved data flow and scalability",
+          "Updated the Risk Screener UI for Hello Discover and implemented form validation with React Hook Form, including dynamic error message handling with Format.js",
+          "<b>Team size : </b> 3 (1 FE, 1 BE, 1 PM)",
+          "<b>Tech stacks : </b> React.js, Format.js, Ant Design, Redux, Rxjs, React Hook Form, React Flow, Tailwind CSS, Typescript"
+        ]
+      },
+      {
+        "term": "Jan 2023 - May 2023",
+        "name": [
+          {
+            "name": "NPM HHG Workflow",
+            "href": "https://hhg-workflow.vercel.app/"
+          }
+        ],
+        "details": [
+          "Developed a dynamic, virtualized node-based workflow editor using React Flow, with efficient internal state management powered by Zustand",
+          "Used Rollup and Vite.js to bundle TypeScript for an optimized npm package, streamlining both development and production builds, and ensuring smooth npm publishing",
+          "<b>Team size : </b> 1",
+          "<b>Tech stacks : </b> Vite.js, Rollup, React.js, React Flow, Zustand, Ant Design, Tailwind CSS, Typescript"
+        ]
+      }
+    ]
+  },
+  {
+    "company": "Zivas",
+    "location": "HCMC, Vietnam",
+    "projects": [
+      {
+        "term": "",
+        "name": "CRM Phu Hoang Land",
+        "details": [
+          "Built React components to manage customer, department, employee, project, and room booking functions using Formik for form handling and validation",
+          "<b>Team size : </b> 4 (1 FE, 1 BE, 1 PM, 1 Designer)",
+          "<b>Tech stacks : </b> React.js, Ant Design, Formik, Typescript"
+        ]
+      },
+      {
+        "term": "",
+        "name": [
+          {
+            "name": "UEH Boutique Hotel",
+            "href": "https://hotel.ueh.edu.vn/en/"
+          }
+        ],
+        "details": [
+          "Converted Adobe XD designs into responsive HTML, CSS, and JavaScript layouts optimized for mobile devices",
+          "Created a custom WordPress theme and implemented TypeRocket for dynamic, drag-and-drop section management across pages",
+          "Added a custom post type in the WordPress theme for managing information room pages",
+          "Used WPML to enable multilingual support across the website",
+          "<b>Team size : </b> 3 (1 FE, 1 PM, 1 Designer)",
+          "<b>Tech stacks : </b> HTML, CSS, Javascript, Swiper, Bootstrap, Wordpress, WPML, TypeRocket"
+        ]
+      },
+      {
+        "term": "",
+        "name": [
+          {
+            "name": "UEH Future",
+            "href": "https://future.ueh.edu.vn/en/"
+          }
+        ],
+        "details": [
+          "Converted Figma designs into responsive HTML, CSS, and JavaScript layouts optimized for mobile devices",
+          "Created a custom WordPress theme and implemented ACF for dynamic, drag-and-drop section management across pages",
+          "Added custom post types and categories to organize and display posts based on Sustainable Development Goals (SDGs)",
+          "Used Highcharts to visualize Sankey diagrams showing the relationship between pillar and project posts contributing to the SDGs",
+          "<b>Team size : </b> 3 (1 FE, 1 PM, 1 Designer)",
+          "<b>Tech stacks : </b> HTML, CSS, Javascript, Swiper, Bootstrap, Highcharts, Wordpress, WPML, Advanced Custom Field(ACF)"
+        ]
+      }
+    ]
+  },
+  {
+    "company": "Corsiva Lab Pte Ltd",
+    "location": "Singapore",
+    "projects": [
+      {
+        "term": "",
+        "name": [
+          {
+            "name": "Kaimay",
+            "href": "http://www.kaimay.com.sg/"
+          },
+          {
+            "name": "Tacam Steel",
+            "href": "https://www.tacamsteel.com/"
+          },
+          {
+            "name": "Medela",
+            "href": "https://medelabreastfeeding.asia/sg/"
+          },
+          {
+            "name": "Paya Beach Resort",
+            "href": "http://payabeachv19.azurewebsites.net"
+          }
+        ],
+        "details": [
+          "Built custom WordPress themes by accurately translating Adobe XD layouts into code",
+          "Developed flexible, drag-and-drop page layout components in WordPress CMS using TypeRocket/Advanced Custom Field(ACF)",
+          "<b>Team size : </b> 3 (1 FE, 1 PM, 1 Designer)",
+          "<b>Tech stacks : </b> HTML, CSS, Javascript, jQuery, Swiper, Bootstrap, Wordpress, Woocommerce, TypeRocket, Advanced Custom Field(ACF)"
+        ]
+      }
+    ]
+  },
+
+  {
+    "company": "Munkas Agency",
+    "location": "HCMC, Vietnam",
+    "projects": [
+      {
+        "term": "",
+        "name": [
+          {
+            "name": "Munkas Website",
+            "href": "https://munkas.com/"
+          }
+        ],
+        "details": [
+          "Built custom WordPress themes by accurately translating Adobe Photoshop/Illustrator layouts into code",
+          "Developed flexible, drag-and-drop page layout components in WordPress CMS using TypeRocket/Advanced Custom Field(ACF)",
+          "<b>Team size : </b> 3 (1 FE, 1 PM, 1 Designer)",
+          "<b>Tech stacks : </b> HTML, CSS, Javascript, jQuery, Swiper, Bootstrap, Wordpress, Woocommerce, TypeRocket, Advanced Custom Field(ACF)"
+        ]
+      }
+    ]
+  }
+]
