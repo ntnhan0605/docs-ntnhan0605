@@ -9,9 +9,16 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as WelcomeRouteImport } from './routes/welcome'
 import { Route as ResumeRouteImport } from './routes/resume'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ReactDemoVirtualized_listRouteImport } from './routes/react/demo/virtualized_list'
 
+const WelcomeRoute = WelcomeRouteImport.update({
+  id: '/welcome',
+  path: '/welcome',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ResumeRoute = ResumeRouteImport.update({
   id: '/resume',
   path: '/resume',
@@ -22,35 +29,56 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ReactDemoVirtualized_listRoute =
+  ReactDemoVirtualized_listRouteImport.update({
+    id: '/react/demo/virtualized_list',
+    path: '/react/demo/virtualized_list',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/resume': typeof ResumeRoute
+  '/welcome': typeof WelcomeRoute
+  '/react/demo/virtualized_list': typeof ReactDemoVirtualized_listRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/resume': typeof ResumeRoute
+  '/welcome': typeof WelcomeRoute
+  '/react/demo/virtualized_list': typeof ReactDemoVirtualized_listRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/resume': typeof ResumeRoute
+  '/welcome': typeof WelcomeRoute
+  '/react/demo/virtualized_list': typeof ReactDemoVirtualized_listRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/resume'
+  fullPaths: '/' | '/resume' | '/welcome' | '/react/demo/virtualized_list'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/resume'
-  id: '__root__' | '/' | '/resume'
+  to: '/' | '/resume' | '/welcome' | '/react/demo/virtualized_list'
+  id: '__root__' | '/' | '/resume' | '/welcome' | '/react/demo/virtualized_list'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ResumeRoute: typeof ResumeRoute
+  WelcomeRoute: typeof WelcomeRoute
+  ReactDemoVirtualized_listRoute: typeof ReactDemoVirtualized_listRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/welcome': {
+      id: '/welcome'
+      path: '/welcome'
+      fullPath: '/welcome'
+      preLoaderRoute: typeof WelcomeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/resume': {
       id: '/resume'
       path: '/resume'
@@ -65,12 +93,21 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/react/demo/virtualized_list': {
+      id: '/react/demo/virtualized_list'
+      path: '/react/demo/virtualized_list'
+      fullPath: '/react/demo/virtualized_list'
+      preLoaderRoute: typeof ReactDemoVirtualized_listRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ResumeRoute: ResumeRoute,
+  WelcomeRoute: WelcomeRoute,
+  ReactDemoVirtualized_listRoute: ReactDemoVirtualized_listRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
