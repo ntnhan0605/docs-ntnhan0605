@@ -1,6 +1,5 @@
 // 🔴 DO NOT EDIT — This file is generated.
-import * as React from "react";
-import type { SVGProps } from "react";
+import type { SVGProps } from 'react'
 const Logo_lightSvg = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width="1em"
@@ -10,7 +9,7 @@ const Logo_lightSvg = (props: SVGProps<SVGSVGElement>) => (
     xmlnsXlink="http://www.w3.org/1999/xlink"
     {...props}
   >
-    <title>{"React-Logo-Filled (1)"}</title>
+    <title>{'React-Logo-Filled (1)'}</title>
     <g id="Page-1" stroke="none" strokeWidth={1} fill="none" fillRule="evenodd">
       <g id="React-Logo-Filled-(1)" fill="#087EA4" fillRule="nonzero">
         <path
@@ -24,5 +23,5 @@ const Logo_lightSvg = (props: SVGProps<SVGSVGElement>) => (
       </g>
     </g>
   </svg>
-);
-export default Logo_lightSvg;
+)
+export default Logo_lightSvg

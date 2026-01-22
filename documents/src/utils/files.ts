@@ -3,14 +3,13 @@ export async function readMarkdownFile(file: string) {
     try {
       const fileReaded = (await import('fs')).readFileSync(
         (await import('path')).resolve(file),
-        'utf-8'
-      );
-      return fileReaded;
+        'utf-8',
+      )
+      return fileReaded
     } catch (error) {
-      return null;
+      return null
     }
   } else {
-		const reader = new FileReader()
-		
-	}
+    // const reader = new FileReader()
+  }
 }

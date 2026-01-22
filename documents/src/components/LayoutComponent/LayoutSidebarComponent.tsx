@@ -1,4 +1,4 @@
-import type { IMenuItem } from '@/types/men'
+import type { IMenuItem } from '@/types/menu'
 import type { IMuiSvgIcon } from '@/types/routes'
 import {
   default as MenuIcon,
@@ -77,7 +77,6 @@ export type LayoutSidebarComponentProps = PropsWithChildren<{
   style?: CSSProperties
 }>
 export const LayoutSidebarComponent: FC<LayoutSidebarComponentProps> = ({
-  bg,
   title,
   logo,
   items,
@@ -87,7 +86,7 @@ export const LayoutSidebarComponent: FC<LayoutSidebarComponentProps> = ({
 }) => {
   const location = useLocation()
   const {
-    palette: { mode },
+    // palette: { mode },
   } = useTheme()
   const isMobile = useMediaQuery(({ breakpoints }) => breakpoints.down('md'))
   const [selectedItems, setSelectedItems] = useState<string>('')
@@ -132,7 +131,7 @@ export const LayoutSidebarComponent: FC<LayoutSidebarComponentProps> = ({
           square
           className={clsx(
             `${CLS}--sidebar`,
-            'h-dvh w-[280px] sticky top-0 left-0',
+            'h-dvh w-70 sticky top-0 left-0',
             'flex flex-col',
           )}
         >
@@ -148,7 +147,7 @@ export const LayoutSidebarComponent: FC<LayoutSidebarComponentProps> = ({
               />
             )}
             {!!title && (
-              <Typography variant="h1" className="!text-2xl font-bold">
+              <Typography variant="h1" className="text-2xl! font-bold">
                 {title}
               </Typography>
             )}

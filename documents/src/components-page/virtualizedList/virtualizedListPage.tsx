@@ -1,11 +1,11 @@
-import { HeadingComponent } from '~/components/HeadingComponent';
-import { VirtualizedListComponent } from '~/components/VirtualizedListComponent';
+import { HeadingComponent } from '@/components/HeadingComponent'
+import { VirtualizedListComponent } from '@/components/VirtualizedListComponent'
 
-const LIST_ITEM_LENGTH = 1000;
+const LIST_ITEM_LENGTH = 1000
 export function VirtualizedListPage() {
   const listItems = Array.from({ length: LIST_ITEM_LENGTH }).map(
-    (_, index) => index + 1
-  );
+    (_, index) => index + 1,
+  )
   return (
     <>
       <HeadingComponent className="text-center">
@@ -14,5 +14,5 @@ export function VirtualizedListPage() {
       {/* <NonVirtualizedList items={listItems} /> */}
       <VirtualizedListComponent items={listItems} />
     </>
-  );
+  )
 }

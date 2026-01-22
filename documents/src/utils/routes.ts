@@ -1,33 +1,30 @@
-import type { RouteConfigEntry } from '@react-router/dev/routes';
-import type { IMenuItem } from '~/types/menu';
+import type { IMenuItem } from '@/types/menu'
 
 export function formatRouteToMenuItem(
-  route: RouteConfigEntry,
-  slug?: string
+  route: IMenuItem,
+  slug?: string,
 ): IMenuItem | null {
-  if (!route.path) {
-    return null;
+  if (!route.key) {
+    return null
   }
-  const rootSlug = slug ? `${slug}/` : '/';
+  const rootSlug = slug ? `${slug}/` : '/'
 
   const path =
     rootSlug +
-    route.path
+    route.key
       .split('/')
       .filter((p) => p !== '*')
-      .join('/');
+      .join('/')
 
   const menuItem: IMenuItem = {
-    id: path,
-    href: path,
-    itemId: path,
-    label: route.path,
-  };
+    key: path,
+    label: route.key,
+  }
 
   if (route?.children) {
     menuItem.children = route.children
-      .map((itemRoute) => formatRouteToMenuItem(itemRoute, path))
-      .filter(Boolean) as IMenuItem[];
+      .map((itemRoute: any) => formatRouteToMenuItem(itemRoute, path))
+      .filter(Boolean) as IMenuItem[]
   }
-  return menuItem;
+  return menuItem
 }

@@ -1,14 +1,13 @@
-import Box from '@mui/material/Box';
-import Collapse from '@mui/material/Collapse';
-import { styled } from '@mui/material/styles';
-import SvgIcon from '@mui/material/SvgIcon';
-import type { TransitionProps } from '@mui/material/transitions';
-import Typography from '@mui/material/Typography';
-import { useTreeItemModel } from '@mui/x-tree-view/hooks';
+import Collapse from '@mui/material/Collapse'
+import { styled } from '@mui/material/styles'
+import SvgIcon from '@mui/material/SvgIcon'
+import type { TransitionProps } from '@mui/material/transitions'
+import Typography from '@mui/material/Typography'
+import { useTreeItemModel } from '@mui/x-tree-view/hooks'
 import {
   RichTreeView,
   type RichTreeViewProps,
-} from '@mui/x-tree-view/RichTreeView';
+} from '@mui/x-tree-view/RichTreeView'
 import {
   TreeItemCheckbox,
   TreeItemContent,
@@ -16,25 +15,26 @@ import {
   TreeItemLabel,
   TreeItemRoot,
   type TreeItemProps,
-} from '@mui/x-tree-view/TreeItem';
-import { TreeItemDragAndDropOverlay } from '@mui/x-tree-view/TreeItemDragAndDropOverlay';
-import { TreeItemIcon } from '@mui/x-tree-view/TreeItemIcon';
-import { TreeItemProvider } from '@mui/x-tree-view/TreeItemProvider';
+} from '@mui/x-tree-view/TreeItem'
+import { TreeItemDragAndDropOverlay } from '@mui/x-tree-view/TreeItemDragAndDropOverlay'
+import { TreeItemIcon } from '@mui/x-tree-view/TreeItemIcon'
+import { TreeItemProvider } from '@mui/x-tree-view/TreeItemProvider'
 import {
   useTreeItem,
   type UseTreeItemParameters,
-} from '@mui/x-tree-view/useTreeItem';
-import { animated, useSpring } from '@react-spring/web';
-import { forwardRef, Fragment, type FC } from 'react';
-import { Link, type LinkProps } from 'react-router';
-import type { IMenuItem } from '~/types/menu';
+} from '@mui/x-tree-view/useTreeItem'
+import { animated, useSpring } from '@react-spring/web'
+import { forwardRef, Fragment, type FC } from 'react'
 
-export type TreeMenuComponentProps = RichTreeViewProps<IMenuItem, false>;
+import type { IMenuItem } from '@/types/menu'
+import { Link, type LinkProps } from '@tanstack/react-router'
+
+export type TreeMenuComponentProps = RichTreeViewProps<IMenuItem, false>
 const TreeIMenuCollapse = styled(Collapse)({
   padding: 0,
-});
+})
 
-const TreeIMenuAnimatedCollapse = animated(TreeIMenuCollapse);
+const TreeIMenuAnimatedCollapse = animated(TreeIMenuCollapse)
 
 function TransitionComponent(props: TransitionProps) {
   const style = useSpring({
@@ -42,20 +42,20 @@ function TransitionComponent(props: TransitionProps) {
       opacity: props.in ? 1 : 0,
       transform: `translate3d(0,${props.in ? 0 : 20}px,0)`,
     },
-  });
+  })
 
-  return <TreeIMenuAnimatedCollapse style={style} {...props} />;
+  return <TreeIMenuAnimatedCollapse style={style} {...props} />
 }
 
 const TreeItemLabelText = styled(Typography)({
   color: 'inherit',
   fontWeight: 500,
-});
+})
 
 interface TreeIMenuItemLabelProps {
-  children: React.ReactNode;
-  icon?: IMenuItem['icon'];
-  expandable?: boolean;
+  children: React.ReactNode
+  icon?: IMenuItem['icon']
+  expandable?: boolean
 }
 
 function TreeMenuItemLabel({
@@ -85,19 +85,20 @@ function TreeMenuItemLabel({
       <TreeItemLabelText variant="body2">{children}</TreeItemLabelText>
       {/* {expandable && <DotIcon />} */}
     </TreeItemLabel>
-  );
+  )
 }
 
-type TreeMenuItemProps = TreeItemProps;
+type TreeMenuItemProps = TreeItemProps
 
 interface ITreeMenuItemProps
-  extends Omit<UseTreeItemParameters, 'rootRef'>,
+  extends
+    Omit<UseTreeItemParameters, 'rootRef'>,
     Omit<React.HTMLAttributes<HTMLLIElement>, 'onFocus'> {}
 const TreeMenuItem: FC<TreeMenuItemProps> = forwardRef(function CustomTreeItem(
   props: ITreeMenuItemProps,
-  ref: React.Ref<HTMLLIElement>
+  ref: React.Ref<HTMLLIElement>,
 ) {
-  const { id, itemId, label, disabled, children, ...other } = props;
+  const { id, itemId, label, disabled, children, ...other } = props
 
   const {
     getContextProviderProps,
@@ -109,18 +110,18 @@ const TreeMenuItem: FC<TreeMenuItemProps> = forwardRef(function CustomTreeItem(
     getGroupTransitionProps,
     getDragAndDropOverlayProps,
     status,
-  } = useTreeItem({ id, itemId, children, label, disabled, rootRef: ref });
+  } = useTreeItem({ id, itemId, children, label, disabled, rootRef: ref })
 
   const {
     href,
     icon,
     children: itemChildren,
-  } = useTreeItemModel<IMenuItem>(itemId)!;
-  const isLink = href && !itemChildren?.length;
-  const TreeItemContainer = isLink ? Link : Fragment;
-  const treeItemContainerProps = isLink ? { to: href } : {};
+  } = useTreeItemModel<IMenuItem>(itemId)!
+  const isLink = href && !itemChildren?.length
+  const TreeItemContainer = isLink ? Link : Fragment
+  const treeItemContainerProps = isLink ? { to: href } : {}
 
-  const expandable = status.expandable && status.expanded;
+  const expandable = status.expandable && status.expanded
 
   return (
     <TreeItemProvider {...getContextProviderProps()}>
@@ -138,8 +139,8 @@ const TreeMenuItem: FC<TreeMenuItemProps> = forwardRef(function CustomTreeItem(
         {children && <TransitionComponent {...getGroupTransitionProps()} />}
       </TreeItemRoot>
     </TreeItemProvider>
-  );
-});
+  )
+})
 
 export const TreeMenuComponent: FC<TreeMenuComponentProps> = ({
   items,
@@ -152,5 +153,5 @@ export const TreeMenuComponent: FC<TreeMenuComponentProps> = ({
       items={items}
       slots={{ ...slots, item: slots?.item || TreeMenuItem }}
     />
-  );
-};
+  )
+}

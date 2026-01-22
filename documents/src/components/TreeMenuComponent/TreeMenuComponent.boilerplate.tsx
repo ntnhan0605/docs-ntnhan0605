@@ -1,32 +1,32 @@
-import * as React from 'react';
-import { animated, useSpring } from '@react-spring/web';
-import { styled, alpha } from '@mui/material/styles';
-import { type TransitionProps } from '@mui/material/transitions';
-import Box from '@mui/material/Box';
-import Collapse from '@mui/material/Collapse';
-import Typography from '@mui/material/Typography';
-import ArticleIcon from '@mui/icons-material/Article';
-import DeleteIcon from '@mui/icons-material/Delete';
-import FolderOpenIcon from '@mui/icons-material/FolderOpen';
-import FolderRounded from '@mui/icons-material/FolderRounded';
-import ImageIcon from '@mui/icons-material/Image';
-import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
-import VideoCameraBackIcon from '@mui/icons-material/VideoCameraBack';
-import { RichTreeView } from '@mui/x-tree-view/RichTreeView';
-import {
-  useTreeItem,
-  type UseTreeItemParameters,
-} from '@mui/x-tree-view/useTreeItem';
+import ArticleIcon from '@mui/icons-material/Article'
+import DeleteIcon from '@mui/icons-material/Delete'
+import FolderOpenIcon from '@mui/icons-material/FolderOpen'
+import FolderRounded from '@mui/icons-material/FolderRounded'
+import ImageIcon from '@mui/icons-material/Image'
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf'
+import VideoCameraBackIcon from '@mui/icons-material/VideoCameraBack'
+import Box from '@mui/material/Box'
+import Collapse from '@mui/material/Collapse'
+import Typography from '@mui/material/Typography'
+import { alpha, styled } from '@mui/material/styles'
+import { type TransitionProps } from '@mui/material/transitions'
+import { RichTreeView } from '@mui/x-tree-view/RichTreeView'
 import {
   TreeItemCheckbox,
   TreeItemIconContainer,
   TreeItemLabel,
-} from '@mui/x-tree-view/TreeItem';
-import { TreeItemIcon } from '@mui/x-tree-view/TreeItemIcon';
-import { TreeItemProvider } from '@mui/x-tree-view/TreeItemProvider';
-import { TreeItemDragAndDropOverlay } from '@mui/x-tree-view/TreeItemDragAndDropOverlay';
-import { useTreeItemModel } from '@mui/x-tree-view/hooks';
-import { type TreeViewBaseItem } from '@mui/x-tree-view/models';
+} from '@mui/x-tree-view/TreeItem'
+import { TreeItemDragAndDropOverlay } from '@mui/x-tree-view/TreeItemDragAndDropOverlay'
+import { TreeItemIcon } from '@mui/x-tree-view/TreeItemIcon'
+import { TreeItemProvider } from '@mui/x-tree-view/TreeItemProvider'
+import { useTreeItemModel } from '@mui/x-tree-view/hooks'
+import { type TreeViewBaseItem } from '@mui/x-tree-view/models'
+import {
+  useTreeItem,
+  type UseTreeItemParameters,
+} from '@mui/x-tree-view/useTreeItem'
+import { animated, useSpring } from '@react-spring/web'
+import * as React from 'react'
 
 type FileType =
   | 'image'
@@ -35,13 +35,13 @@ type FileType =
   | 'video'
   | 'folder'
   | 'pinned'
-  | 'trash';
+  | 'trash'
 
 type ExtendedTreeItemProps = {
-  fileType?: FileType;
-  id: string;
-  label: string;
-};
+  fileType?: FileType
+  id: string
+  label: string
+}
 
 const ITEMS: TreeViewBaseItem<ExtendedTreeItemProps>[] = [
   {
@@ -76,7 +76,7 @@ const ITEMS: TreeViewBaseItem<ExtendedTreeItemProps>[] = [
   },
   { id: '3', label: 'History', fileType: 'folder' },
   { id: '4', label: 'Trash', fileType: 'trash' },
-];
+]
 
 function DotIcon() {
   return (
@@ -92,12 +92,12 @@ function DotIcon() {
         mx: 1,
       }}
     />
-  );
+  )
 }
 declare module 'react' {
   interface CSSProperties {
-    '--tree-view-color'?: string;
-    '--tree-view-bg-color'?: string;
+    '--tree-view-color'?: string
+    '--tree-view-bg-color'?: string
   }
 }
 
@@ -110,7 +110,7 @@ const TreeItemRoot = styled('li')(({ theme }) => ({
   ...theme.applyStyles('light', {
     color: theme.palette.grey[800],
   }),
-}));
+}))
 
 const TreeItemContent = styled('div')(({ theme }) => ({
   padding: theme.spacing(0.5),
@@ -162,13 +162,13 @@ const TreeItemContent = styled('div')(({ theme }) => ({
       color: theme.palette.primary.main,
     }),
   },
-}));
+}))
 
 const CustomCollapse = styled(Collapse)({
   padding: 0,
-});
+})
 
-const AnimatedCollapse = animated(CustomCollapse);
+const AnimatedCollapse = animated(CustomCollapse)
 
 function TransitionComponent(props: TransitionProps) {
   const style = useSpring({
@@ -176,21 +176,21 @@ function TransitionComponent(props: TransitionProps) {
       opacity: props.in ? 1 : 0,
       transform: `translate3d(0,${props.in ? 0 : 20}px,0)`,
     },
-  });
+  })
 
-  return <AnimatedCollapse style={style} {...props} />;
+  return <AnimatedCollapse style={style} {...props} />
 }
 
 const TreeItemLabelText = styled(Typography)({
   color: 'inherit',
   fontFamily: 'General Sans',
   fontWeight: 500,
-});
+})
 
 interface CustomLabelProps {
-  children: React.ReactNode;
-  icon?: React.ElementType;
-  expandable?: boolean;
+  children: React.ReactNode
+  icon?: React.ElementType
+  expandable?: boolean
 }
 
 function CustomLabel({
@@ -219,39 +219,40 @@ function CustomLabel({
       <TreeItemLabelText variant="body2">{children}</TreeItemLabelText>
       {expandable && <DotIcon />}
     </TreeItemLabel>
-  );
+  )
 }
 
 const getIconFromFileType = (fileType: FileType) => {
   switch (fileType) {
     case 'image':
-      return ImageIcon;
+      return ImageIcon
     case 'pdf':
-      return PictureAsPdfIcon;
+      return PictureAsPdfIcon
     case 'doc':
-      return ArticleIcon;
+      return ArticleIcon
     case 'video':
-      return VideoCameraBackIcon;
+      return VideoCameraBackIcon
     case 'folder':
-      return FolderRounded;
+      return FolderRounded
     case 'pinned':
-      return FolderOpenIcon;
+      return FolderOpenIcon
     case 'trash':
-      return DeleteIcon;
+      return DeleteIcon
     default:
-      return ArticleIcon;
+      return ArticleIcon
   }
-};
+}
 
 interface CustomTreeItemProps
-  extends Omit<UseTreeItemParameters, 'rootRef'>,
+  extends
+    Omit<UseTreeItemParameters, 'rootRef'>,
     Omit<React.HTMLAttributes<HTMLLIElement>, 'onFocus'> {}
 
 const CustomTreeItem = React.forwardRef(function CustomTreeItem(
   props: CustomTreeItemProps,
-  ref: React.Ref<HTMLLIElement>
+  ref: React.Ref<HTMLLIElement>,
 ) {
-  const { id, itemId, label, disabled, children, ...other } = props;
+  const { id, itemId, label, disabled, children, ...other } = props
 
   const {
     getContextProviderProps,
@@ -263,15 +264,15 @@ const CustomTreeItem = React.forwardRef(function CustomTreeItem(
     getGroupTransitionProps,
     getDragAndDropOverlayProps,
     status,
-  } = useTreeItem({ id, itemId, children, label, disabled, rootRef: ref });
+  } = useTreeItem({ id, itemId, children, label, disabled, rootRef: ref })
 
-  const item = useTreeItemModel<ExtendedTreeItemProps>(itemId)!;
+  const item = useTreeItemModel<ExtendedTreeItemProps>(itemId)!
 
-  let icon;
+  let icon
   if (status.expandable) {
-    icon = FolderRounded;
+    icon = FolderRounded
   } else if (item.fileType) {
-    icon = getIconFromFileType(item.fileType);
+    icon = getIconFromFileType(item.fileType)
   }
 
   return (
@@ -293,8 +294,8 @@ const CustomTreeItem = React.forwardRef(function CustomTreeItem(
         {children && <TransitionComponent {...getGroupTransitionProps()} />}
       </TreeItemRoot>
     </TreeItemProvider>
-  );
-});
+  )
+})
 
 export default function FileExplorer() {
   return (
@@ -311,5 +312,5 @@ export default function FileExplorer() {
       slots={{ item: CustomTreeItem }}
       itemChildrenIndentation={24}
     />
-  );
+  )
 }

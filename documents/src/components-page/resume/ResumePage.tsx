@@ -183,7 +183,7 @@ const SectionItem: FC<{
                   </Typography>
                   <Typography
                     variant="body2"
-                    className={clsx(`${CLS}_right`, '!font-semibold')}
+                    className={clsx(`${CLS}_right`, 'font-semibold!')}
                   >
                     {right}
                   </Typography>
@@ -279,7 +279,7 @@ const ResumeSectionHeader: FC<{
               component={Link}
               label={
                 <>
-                  <PhoneIcon className="mr-[2px]" />
+                  <PhoneIcon className="mr-0.5" />
                   +84 987 527 544
                 </>
               }
@@ -292,7 +292,7 @@ const ResumeSectionHeader: FC<{
               component={Link}
               label={
                 <>
-                  <MailIcon className="mr-[2px]" />
+                  <MailIcon className="mr-0.5" />
                   ntnhan0605@gmail.com
                 </>
               }
@@ -383,7 +383,7 @@ const ResumeSectionProject: FC<{
               key={`${idx}`}
               name={company}
               location={location}
-              items={projects.map(({ name, term, details }, idx) => ({
+              items={projects.map(({ name, term, details }) => ({
                 left: <SectionMarkdown content={name} />,
                 right: term,
                 children: <SectionItemList items={details} />,
