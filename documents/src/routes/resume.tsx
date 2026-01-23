@@ -5,7 +5,6 @@ export const Route = createFileRoute('/resume')({
   component: RouteComponent,
   head() {
     return {
-      title: 'Resume of NGUYEN THIEN NHAN - Frontend Software Engineer',
       links: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         {
@@ -42,5 +41,10 @@ export const Route = createFileRoute('/resume')({
 })
 
 function RouteComponent() {
-  return <ResumePage />
+  return (
+    <>
+      <title>Resume of NGUYEN THIEN NHAN - Frontend Software Engineer</title>
+      <ResumePage />
+    </>
+  )
 }
