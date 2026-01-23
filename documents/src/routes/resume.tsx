@@ -5,6 +5,7 @@ export const Route = createFileRoute('/resume')({
   component: RouteComponent,
   head() {
     return {
+      title: 'Resume of NGUYEN THIEN NHAN - Frontend Software Engineer',
       links: [
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         {
@@ -14,6 +15,26 @@ export const Route = createFileRoute('/resume')({
         {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap',
+        },
+      ],
+      meta: [
+        {
+          name: 'description',
+          content:
+            'Explore the professional resume of NGUYEN THIEN NHAN, showcasing skills, experience, and achievements in [Your Industry]. Download the PDF version for detailed insights.',
+        },
+        {
+          property: 'og:title',
+          content: 'Resume of NGUYEN THIEN NHAN - Frontend Software Engineer',
+        },
+        {
+          property: 'og:description',
+          content:
+            'Explore the professional resume of NGUYEN THIEN NHAN, showcasing skills, experience, and achievements in [Your Industry]. Download the PDF version for detailed insights.',
+        },
+        {
+          property: 'og:type',
+          content: 'website',
         },
       ],
     }

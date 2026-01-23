@@ -1,5 +1,6 @@
+import { tanstackConfig, tanstackPlugins } from '@/constants/tanstackDevtools'
 import { TanStackDevtools } from '@tanstack/react-devtools'
-import { TanStackRouterDevtoolsPanel } from '@tanstack/react-router-devtools'
+
 import {
   createContext,
   useContext,
@@ -32,12 +33,7 @@ export const RootContextProvider: FC<PropsWithChildren<{}>> = (props) => {
     <RootContext.Provider value={value}>
       {children}
       {value.tanstackDebug && (
-        <TanStackDevtools
-          config={{ position: 'bottom-left' }}
-          plugins={[
-            { name: 'TSK Router', render: <TanStackRouterDevtoolsPanel /> },
-          ]}
-        />
+        <TanStackDevtools config={tanstackConfig} plugins={tanstackPlugins} />
       )}
     </RootContext.Provider>
   )
