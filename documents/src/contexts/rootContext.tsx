@@ -10,15 +10,19 @@ import {
   type PropsWithChildren,
 } from 'react'
 
-interface RootContextValue {
+type RootContextValue = {
   tanstackDebug: boolean
 }
 
-const INIT_ROOTCONTEXT: RootContextValue = {
+type RootContextActions = {}
+
+type RootContextProps = RootContextValue & RootContextActions
+
+const INIT_ROOTCONTEXT: RootContextProps = {
   tanstackDebug: false,
 }
 
-export const RootContext = createContext<RootContextValue>(INIT_ROOTCONTEXT)
+export const RootContext = createContext<RootContextProps>(INIT_ROOTCONTEXT)
 
 export const RootContextProvider: FC<PropsWithChildren<{}>> = (props) => {
   const { children } = props
@@ -30,7 +34,7 @@ export const RootContextProvider: FC<PropsWithChildren<{}>> = (props) => {
   }, [])
 
   return (
-    <RootContext.Provider value={value}>
+    <RootContext.Provider value={{ ...value }}>
       {children}
       {value.tanstackDebug && (
         <TanStackDevtools config={tanstackConfig} plugins={tanstackPlugins} />

@@ -1,5 +1,5 @@
 import { HeadingComponent } from '@/components/HeadingComponent'
-import { VirtualizedListComponent } from '@/components/VirtualizedListComponent'
+import { VirtualizedListComponent } from '@/components/ListVirtualizedComponent'
 
 const LIST_ITEM_LENGTH = 1000
 export function VirtualizedListPage() {

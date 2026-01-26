@@ -1,4 +1,4 @@
-import { ResumePage } from '@/components-page/resume'
+import { ResumePage } from '@/components-pages/resume'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/resume')({

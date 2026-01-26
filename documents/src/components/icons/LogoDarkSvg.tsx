@@ -1,6 +1,7 @@
 // 🔴 DO NOT EDIT — This file is generated.
-import type { SVGProps } from 'react'
-const Logo_darkSvg = (props: SVGProps<SVGSVGElement>) => (
+import * as React from "react";
+import type { SVGProps } from "react";
+const LogoDarkSvg = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width="1em"
     height="1em"
@@ -9,7 +10,7 @@ const Logo_darkSvg = (props: SVGProps<SVGSVGElement>) => (
     xmlnsXlink="http://www.w3.org/1999/xlink"
     {...props}
   >
-    <title>{'React-Logo-Filled (1)'}</title>
+    <title>{"React-Logo-Filled (1)"}</title>
     <g id="Page-1" stroke="none" strokeWidth={1} fill="none" fillRule="evenodd">
       <g
         id="Artboard-Copy-7"
@@ -30,5 +31,5 @@ const Logo_darkSvg = (props: SVGProps<SVGSVGElement>) => (
       </g>
     </g>
   </svg>
-)
-export default Logo_darkSvg
+);
+export default LogoDarkSvg;

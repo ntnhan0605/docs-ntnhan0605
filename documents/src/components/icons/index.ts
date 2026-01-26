@@ -1,6 +1,6 @@
 // 🔴 DO NOT EDIT — This file is generated.
-import Logo_darkSvg from './Logo_darkSvg'
-import Logo_lightSvg from './Logo_lightSvg'
+import LogoDarkSvg from './LogoDarkSvg'
+import LogoLightSvg from './LogoLightSvg'
 
-export {Logo_darkSvg,
-Logo_lightSvg}
+export {LogoDarkSvg,
+LogoLightSvg}

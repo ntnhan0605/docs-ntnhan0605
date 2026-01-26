@@ -1,5 +1,5 @@
 import { HeadingComponent } from '@/components/HeadingComponent'
-import { VirtualizedListComponent } from '@/components/VirtualizedListComponent'
+import { VirtualizedListComponent } from '@/components/ListVirtualizedComponent'
 import { createFileRoute } from '@tanstack/react-router'
 
 export const Route = createFileRoute('/react/demo/virtualized_list')({

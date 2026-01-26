@@ -1,10 +1,10 @@
-import ArticleIcon from '@mui/icons-material/Article'
-import DeleteIcon from '@mui/icons-material/Delete'
-import FolderOpenIcon from '@mui/icons-material/FolderOpen'
-import FolderRounded from '@mui/icons-material/FolderRounded'
-import ImageIcon from '@mui/icons-material/Image'
-import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf'
-import VideoCameraBackIcon from '@mui/icons-material/VideoCameraBack'
+// import ArticleIcon from '@mui/icons-material/Article'
+// import DeleteIcon from '@mui/icons-material/Delete'
+// import FolderOpenIcon from '@mui/icons-material/FolderOpen'
+// import FolderRounded from '@mui/icons-material/FolderRounded'
+// import ImageIcon from '@mui/icons-material/Image'
+// import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf'
+// import VideoCameraBackIcon from '@mui/icons-material/VideoCameraBack'
 import Box from '@mui/material/Box'
 import Collapse from '@mui/material/Collapse'
 import Typography from '@mui/material/Typography'
@@ -26,6 +26,15 @@ import {
   type UseTreeItemParameters,
 } from '@mui/x-tree-view/useTreeItem'
 import { animated, useSpring } from '@react-spring/web'
+import {
+  DeleteIcon,
+  Folder,
+  FolderArchive,
+  FolderOpen,
+  ImageIcon,
+  Podcast,
+  Video,
+} from 'lucide-react'
 import * as React from 'react'
 
 type FileType =
@@ -227,19 +236,19 @@ const getIconFromFileType = (fileType: FileType) => {
     case 'image':
       return ImageIcon
     case 'pdf':
-      return PictureAsPdfIcon
+      return
     case 'doc':
-      return ArticleIcon
+      return Podcast
     case 'video':
-      return VideoCameraBackIcon
+      return Video
     case 'folder':
-      return FolderRounded
+      return Folder
     case 'pinned':
-      return FolderOpenIcon
+      return FolderOpen
     case 'trash':
       return DeleteIcon
     default:
-      return ArticleIcon
+      return Podcast
   }
 }
 
@@ -270,7 +279,7 @@ const CustomTreeItem = React.forwardRef(function CustomTreeItem(
 
   let icon
   if (status.expandable) {
-    icon = FolderRounded
+    icon = FolderArchive
   } else if (item.fileType) {
     icon = getIconFromFileType(item.fileType)
   }

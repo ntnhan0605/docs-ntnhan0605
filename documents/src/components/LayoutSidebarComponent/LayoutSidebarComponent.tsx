@@ -1,19 +1,17 @@
 import type { IMenuItem } from '@/types/menu'
 import type { IMuiSvgIcon } from '@/types/routes'
-import {
-  default as MenuIcon,
-  default as SvgIcon,
-} from '@mui/icons-material/Menu'
 import BottomNavigation from '@mui/material/BottomNavigation'
 import Box from '@mui/material/Box'
 import IconButton from '@mui/material/IconButton'
 import Paper from '@mui/material/Paper'
 import { styled, useTheme, type CSSProperties } from '@mui/material/styles'
+import SvgIcon from '@mui/material/SvgIcon'
 import Typography from '@mui/material/Typography'
 import useMediaQuery from '@mui/material/useMediaQuery'
 import { animated, useSpring } from '@react-spring/web'
 import { useLocation } from '@tanstack/react-router'
 import clsx from 'clsx'
+import { Menu } from 'lucide-react'
 import {
   useEffect,
   useMemo,
@@ -23,7 +21,7 @@ import {
   type ReactNode,
   type SetStateAction,
 } from 'react'
-import { TreeMenuComponent } from '../TreeMenuComponent'
+import { TreeMenuComponent } from '../MenuTreeComponent'
 
 const CLS = 'LayoutSidebar'
 
@@ -177,7 +175,7 @@ export const LayoutSidebarComponent: FC<LayoutSidebarComponentProps> = ({
         </Box>
         <BottomNavigation>
           <IconButton onClick={() => setIsOpen(!isOpen)}>
-            <MenuIcon />
+            <Menu />
           </IconButton>
         </BottomNavigation>
       </Box>

@@ -66,14 +66,6 @@ function TreeMenuItemLabel({
 }: TreeIMenuItemLabelProps) {
   return (
     <TreeItemLabel {...other} sx={{ display: 'flex', alignItems: 'center' }}>
-      {/* {Icon && (
-        <Box
-          component={Icon}
-          className="labelIcon"
-          color="inherit"
-          sx={{ mr: 1, fontSize: '1.2rem' }}
-        />
-      )} */}
       {Icon && (
         <SvgIcon
           component={Icon}
@@ -115,6 +107,7 @@ const TreeMenuItem: FC<TreeMenuItemProps> = forwardRef(function CustomTreeItem(
   const {
     href,
     icon,
+    description,
     children: itemChildren,
   } = useTreeItemModel<IMenuItem>(itemId)!
   const isLink = href && !itemChildren?.length
@@ -133,6 +126,15 @@ const TreeMenuItem: FC<TreeMenuItemProps> = forwardRef(function CustomTreeItem(
             </TreeItemIconContainer>
             <TreeItemCheckbox {...getCheckboxProps()} />
             <TreeMenuItemLabel {...getLabelProps({ icon, expandable })} />
+            {!!description && (
+              <Typography
+                variant="caption"
+                color="text.secondary"
+                sx={{ marginLeft: 'auto' }}
+              >
+                {description}
+              </Typography>
+            )}
             <TreeItemDragAndDropOverlay {...getDragAndDropOverlayProps()} />
           </TreeItemContent>
         </TreeItemContainer>
