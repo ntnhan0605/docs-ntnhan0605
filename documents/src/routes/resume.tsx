@@ -42,5 +42,18 @@ export const Route = createFileRoute('/resume')({
 })
 
 function RouteComponent() {
-  return <ResumePage />
+  return (
+    <>
+      <style
+        dangerouslySetInnerHTML={{
+          __html: `
+        .HeaderMainComponent {
+          display: none;
+        }
+        `,
+        }}
+      />
+      <ResumePage />
+    </>
+  )
 }

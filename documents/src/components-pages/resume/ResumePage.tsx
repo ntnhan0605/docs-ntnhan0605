@@ -1,3 +1,4 @@
+import { GithubSvg, LinkedinSvg } from '@/components/Icons'
 import { MarkdownComponent } from '@/components/MarkdownComponent'
 import Chip from '@mui/material/Chip'
 import { grey } from '@mui/material/colors'
@@ -7,7 +8,7 @@ import Stack from '@mui/material/Stack'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import Typography from '@mui/material/Typography'
 import clsx from 'clsx'
-import { Github, Linkedin, Mail, Phone } from 'lucide-react'
+import { Mail, Phone } from 'lucide-react'
 import type { CSSProperties, FC, ReactNode } from 'react'
 import { Fragment } from 'react'
 import educations from './resumeDB/educations.json'
@@ -86,10 +87,13 @@ const resumeTheme = createTheme({
           },
         },
         label: {
+          display: 'flex',
+          gap: 1,
+          alignItems: 'center',
           '&:has(.only-icon)': {
             paddingInline: 0,
             svg: {
-              fontSize: 16,
+              fontSize: 15,
             },
           },
         },
@@ -276,7 +280,7 @@ const ResumeSectionHeader: FC<{
               component={Link}
               label={
                 <>
-                  <Phone className="mr-0.5" />
+                  <Phone size={14} className="mr-0.5" />
                   +84 987 527 544
                 </>
               }
@@ -289,7 +293,7 @@ const ResumeSectionHeader: FC<{
               component={Link}
               label={
                 <>
-                  <Mail className="mr-0.5" />
+                  <Mail size={14} className="mr-0.5" />
                   ntnhan0605@gmail.com
                 </>
               }
@@ -300,7 +304,7 @@ const ResumeSectionHeader: FC<{
               size="small"
               href="https://www.linkedin.com/in/ntnhan65/"
               component={Link}
-              label={<Linkedin className="only-icon" />}
+              label={<LinkedinSvg className="only-icon" />}
             />
             <Chip
               clickable
@@ -308,7 +312,7 @@ const ResumeSectionHeader: FC<{
               size="small"
               href="https://github.com/ntnhan0605"
               component={Link}
-              label={<Github className="only-icon" />}
+              label={<GithubSvg className="only-icon" />}
             />
           </Stack>
         </div>
