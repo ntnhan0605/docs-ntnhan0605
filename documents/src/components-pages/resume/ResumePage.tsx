@@ -1,5 +1,5 @@
-import { GithubSvg, LinkedinSvg } from '@/components/Icons'
 import { MarkdownComponent } from '@/components/MarkdownComponent'
+import { SvgIcon } from '@mui/material'
 import Chip from '@mui/material/Chip'
 import { grey } from '@mui/material/colors'
 import Divider from '@mui/material/Divider'
@@ -8,7 +8,7 @@ import Stack from '@mui/material/Stack'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import Typography from '@mui/material/Typography'
 import clsx from 'clsx'
-import { Mail, Phone } from 'lucide-react'
+import { Github, Linkedin, Mail, Phone } from 'lucide-react'
 import type { CSSProperties, FC, ReactNode } from 'react'
 import { Fragment } from 'react'
 import educations from './resumeDB/educations.json'
@@ -304,7 +304,7 @@ const ResumeSectionHeader: FC<{
               size="small"
               href="https://www.linkedin.com/in/ntnhan65/"
               component={Link}
-              label={<LinkedinSvg className="only-icon" />}
+              label={<SvgIcon component={Linkedin} className="only-icon" />}
             />
             <Chip
               clickable
@@ -312,7 +312,7 @@ const ResumeSectionHeader: FC<{
               size="small"
               href="https://github.com/ntnhan0605"
               component={Link}
-              label={<GithubSvg className="only-icon" />}
+              label={<SvgIcon component={Github} className="only-icon" />}
             />
           </Stack>
         </div>
