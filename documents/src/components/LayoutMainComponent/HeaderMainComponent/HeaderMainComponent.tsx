@@ -13,7 +13,6 @@ import {
   usePopupState,
 } from 'material-ui-popup-state/hooks'
 import { type FC } from 'react'
-import LogoDarkSvg from '../../Icons/LogoDarkSvg'
 import {
   StyleAppBar,
   StyledList,
@@ -61,7 +60,7 @@ export const HeaderMainComponent: FC<HeaderMainComponentProps> = (props) => {
           className={`${CLS}__logo`}
           aria-label="Go to homepage"
         >
-          <LogoDarkSvg />
+          {/* <LogoDarkSvg /> */}
         </StyledLogoLink>
         {/* Navigation items would go here */}
         <StyledList className={`${CLS}__nav`}>
