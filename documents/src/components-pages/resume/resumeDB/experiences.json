@@ -1,10 +1,24 @@
 [
   {
+    "company": "VN Solutions - VSOLS",
+    "location": "HCMC, Vietnam",
+    "terms": [
+      {
+        "term": "Nov 2025 - Now",
+        "employment_type": "Full-time",
+        "role": "Senior Software Engineer",
+        "responsibilities": [
+          "Developed UI features for IoT products and maintained existing repositories to ensure a stable and responsive user experience."
+        ]
+      }
+    ]
+  },
+  {
     "company": "Hello Health Group",
     "location": "HCMC, Vietnam",
     "terms": [
       {
-        "term": "May 2021 - Oct 2025",
+        "term": "May 2021 - Nov 2025",
         "employment_type": "Full-time",
         "role": "Senior Front-End Engineer",
         "responsibilities": [
@@ -53,7 +67,7 @@
     "location": "HCMC, Vietnam",
     "terms": [
       {
-        "term": "Jan 2018 – Aug 2019",
+        "term": "Mar 2017 – Aug 2019",
         "employment_type": "Full-time",
         "role": "Front-End Developer",
         "responsibilities": [

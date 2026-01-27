@@ -17,10 +17,11 @@ export const Route = createFileRoute('/resume')({
         },
       ],
       meta: [
+        { title: 'Resume of NGUYEN THIEN NHAN - Frontend Software Engineer' },
         {
           name: 'description',
           content:
-            'Explore the professional resume of NGUYEN THIEN NHAN, showcasing skills, experience, and achievements in [Your Industry]. Download the PDF version for detailed insights.',
+            'Explore the professional resume of NGUYEN THIEN NHAN, showcasing skills, experience, and achievements. Download the PDF version for detailed insights.',
         },
         {
           property: 'og:title',
@@ -29,7 +30,7 @@ export const Route = createFileRoute('/resume')({
         {
           property: 'og:description',
           content:
-            'Explore the professional resume of NGUYEN THIEN NHAN, showcasing skills, experience, and achievements in [Your Industry]. Download the PDF version for detailed insights.',
+            'Explore the professional resume of NGUYEN THIEN NHAN, showcasing skills, experience, and achievements. Download the PDF version for detailed insights.',
         },
         {
           property: 'og:type',
@@ -41,10 +42,5 @@ export const Route = createFileRoute('/resume')({
 })
 
 function RouteComponent() {
-  return (
-    <>
-      <title>Resume of NGUYEN THIEN NHAN - Frontend Software Engineer</title>
-      <ResumePage />
-    </>
-  )
+  return <ResumePage />
 }

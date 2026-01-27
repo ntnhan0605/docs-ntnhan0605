@@ -6,6 +6,7 @@ export const Route = createFileRoute('/')({
   head() {
     return {
       meta: [
+        { title: 'React + TanStack Router Starter' },
         {
           name: 'description',
           content: 'A React + TanStack Router starter project',
@@ -18,7 +19,6 @@ export const Route = createFileRoute('/')({
 function App() {
   return (
     <>
-      <title>React + TanStack Router Starter</title>
       <div className="text-center">
         <header className="min-h-screen flex flex-col items-center justify-center bg-[#282c34] text-white text-[calc(10px+2vmin)]">
           <img
