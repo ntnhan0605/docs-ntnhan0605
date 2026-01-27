@@ -24,28 +24,28 @@ import {
 
 const CLS = 'HeaderMainComponent'
 
-interface HeaderMainMenuListItemProps {
-  item: IMenuItem
-}
-const HeaderMainMenuListItem: FC<HeaderMainMenuListItemProps> = ({
-  item,
-  ...restProps
-}) => {
-  const { key, label, icon: Icon, children } = item
+// interface HeaderMainMenuListItemProps {
+//   item: IMenuItem
+// }
+// const HeaderMainMenuListItem: FC<HeaderMainMenuListItemProps> = ({
+//   item,
+//   ...restProps
+// }) => {
+//   const { key, label, icon: Icon, children } = item
 
-  const hasChildren = !!children?.length
+//   const hasChildren = !!children?.length
 
-  return (
-    <StyledListItem key={key} {...restProps}>
-      {!!Icon && (
-        <ListItemIcon className={`${CLS}__nav-item-icon`}>
-          <SvgIcon component={Icon} />
-        </ListItemIcon>
-      )}
-      <ListItemText className={`${CLS}__nav-item-text`}>{label}</ListItemText>
-    </StyledListItem>
-  )
-}
+//   return (
+//     <StyledListItem key={key} {...restProps}>
+//       {!!Icon && (
+//         <ListItemIcon className={`${CLS}__nav-item-icon`}>
+//           <SvgIcon component={Icon} />
+//         </ListItemIcon>
+//       )}
+//       <ListItemText className={`${CLS}__nav-item-text`}>{label}</ListItemText>
+//     </StyledListItem>
+//   )
+// }
 
 export interface HeaderMainComponentProps extends AppBarProps {
   items?: IMenuItem[]

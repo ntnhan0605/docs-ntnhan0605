@@ -1,3 +1,4 @@
+// @ts-nocheck
 // 🔴 DO NOT EDIT — This file is generated.
 import * as React from "react";
 import type { SVGProps } from "react";

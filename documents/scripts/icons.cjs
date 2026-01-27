@@ -2,7 +2,7 @@ const path = require('path')
 const fs = require('fs/promises')
 const svgr = require('@svgr/core').transform
 
-const prefix = `// 🔴 DO NOT EDIT — This file is generated.\n`
+const prefix = `// @ts-nocheck\n// 🔴 DO NOT EDIT — This file is generated.\n`
 const svgPath = path.join(__dirname, '../public/svgs/react')
 const componentsAtomsPath = path.join(__dirname, '../src/components')
 const componentsAtomsIconsPath = `${componentsAtomsPath}/Icons`

@@ -1,8 +1,4 @@
 import { MarkdownComponent } from '@/components/MarkdownComponent'
-import GitHubIcon from '@mui/icons-material/GitHub'
-import LinkedInIcon from '@mui/icons-material/LinkedIn'
-import MailIcon from '@mui/icons-material/Mail'
-import PhoneIcon from '@mui/icons-material/Phone'
 import Chip from '@mui/material/Chip'
 import { grey } from '@mui/material/colors'
 import Divider from '@mui/material/Divider'
@@ -11,6 +7,7 @@ import Stack from '@mui/material/Stack'
 import { createTheme, ThemeProvider } from '@mui/material/styles'
 import Typography from '@mui/material/Typography'
 import clsx from 'clsx'
+import { Github, Linkedin, Mail, Phone } from 'lucide-react'
 import type { CSSProperties, FC, ReactNode } from 'react'
 import { Fragment } from 'react'
 import educations from './resumeDB/educations.json'
@@ -279,7 +276,7 @@ const ResumeSectionHeader: FC<{
               component={Link}
               label={
                 <>
-                  <PhoneIcon className="mr-0.5" />
+                  <Phone className="mr-0.5" />
                   +84 987 527 544
                 </>
               }
@@ -292,7 +289,7 @@ const ResumeSectionHeader: FC<{
               component={Link}
               label={
                 <>
-                  <MailIcon className="mr-0.5" />
+                  <Mail className="mr-0.5" />
                   ntnhan0605@gmail.com
                 </>
               }
@@ -303,7 +300,7 @@ const ResumeSectionHeader: FC<{
               size="small"
               href="https://www.linkedin.com/in/ntnhan65/"
               component={Link}
-              label={<LinkedInIcon className="only-icon" />}
+              label={<Linkedin className="only-icon" />}
             />
             <Chip
               clickable
@@ -311,7 +308,7 @@ const ResumeSectionHeader: FC<{
               size="small"
               href="https://github.com/ntnhan0605"
               component={Link}
-              label={<GitHubIcon className="only-icon" />}
+              label={<Github className="only-icon" />}
             />
           </Stack>
         </div>

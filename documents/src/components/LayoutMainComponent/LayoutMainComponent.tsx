@@ -6,7 +6,7 @@ export type LayoutMainComponentProps = {}
 export const LayoutMainComponent: FC<
   PropsWithChildren<LayoutMainComponentProps>
 > = (props) => {
-  const { children, ...restProps } = props
+  const { children } = props
 
   return (
     <>
