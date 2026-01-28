@@ -13,7 +13,7 @@ import {
   usePopupState,
 } from 'material-ui-popup-state/hooks'
 import { type FC } from 'react'
-import { LogoDarkSvg } from '../../../components/Icons'
+import { LogoDarkSvg } from '../../Icons'
 import {
   StyleAppBar,
   StyledList,
