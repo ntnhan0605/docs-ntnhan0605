@@ -1,3 +1,4 @@
+import { LogoDarkSvg } from '@/components/Icons'
 import type { IMenuItem } from '@/types/menu'
 import { MenuList } from '@mui/material'
 import type { AppBarProps } from '@mui/material/AppBar'
@@ -13,7 +14,6 @@ import {
   usePopupState,
 } from 'material-ui-popup-state/hooks'
 import { type FC } from 'react'
-import { LogoDarkSvg } from '../../Icons'
 import {
   StyleAppBar,
   StyledList,
