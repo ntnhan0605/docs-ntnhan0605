@@ -1,3 +1,4 @@
+import { LogoDarkSvg } from '@/components/Icons'
 import type { IMenuItem } from '@/types/menu'
 import { MenuList } from '@mui/material'
 import type { AppBarProps } from '@mui/material/AppBar'
@@ -60,7 +61,7 @@ export const HeaderMainComponent: FC<HeaderMainComponentProps> = (props) => {
           className={`${CLS}__logo`}
           aria-label="Go to homepage"
         >
-          {/* <LogoDarkSvg /> */}
+          <LogoDarkSvg />
         </StyledLogoLink>
         {/* Navigation items would go here */}
         <StyledList className={`${CLS}__nav`}>
