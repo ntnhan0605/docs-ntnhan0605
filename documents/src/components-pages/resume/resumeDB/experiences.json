@@ -8,7 +8,8 @@
         "employment_type": "Full-time",
         "role": "Senior Software Engineer",
         "responsibilities": [
-          "Developed UI features for IoT products and maintained existing repositories to ensure a stable and responsive user experience."
+          "Developed UI features for IoT products and maintained existing repositories to ensure a stable and responsive user experience.",
+          "Built Cypress E2E automated tests covering authentication flows, using AI-assisted test case generation and review to improve test coverage."
         ]
       }
     ]
