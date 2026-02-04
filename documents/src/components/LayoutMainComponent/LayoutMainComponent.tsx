@@ -1,4 +1,4 @@
-import { MAIN_MENUITEMS } from '@/constants/menuItems/mainMenuItems'
+import { MAIN_MENUITEMS } from '@/utils/constants/menuItems/mainMenuItems'
 import { type FC, type PropsWithChildren } from 'react'
 import { HeaderMainComponent } from './HeaderMainComponent'
 
