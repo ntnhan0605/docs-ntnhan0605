@@ -2,14 +2,26 @@
   "name": "@ntnhan0605/learn",
   "private": true,
   "version": "1.0.0",
-  "main": "index.js",
   "repository": "https://github.com/ntnhan0605/Learn.git",
   "author": "Nhan Nguyen <ntnhan0605@gmail.com>",
   "license": "MIT",
   "workspaces": [
-    "packages/*"
+    "workspaces/*"
   ],
+  "scripts": {
+    "documents:dev": "npm run dev --workspace documents",
+    "documents:build": "npm run build --workspace documents",
+    "documents:preview": "npm run preview --workspace documents",
+    "documents:test": "npm run test --workspace documents",
+    "documents:lint": "npm run lint --workspace documents",
+    "documents:format": "npm run format --workspace documents",
+    "documents:check": "npm run check --workspace documents",
+    "documents:icons": "npm run icons --workspace documents"
+  },
   "dependencies": {
     "express": "^5.1.0"
-  }
+  },
+  "trustedDependencies": [
+    "unrs-resolver"
+  ]
 }

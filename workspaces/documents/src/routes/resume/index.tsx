@@ -1,7 +1,7 @@
 import { ResumePage } from '@/routes/resume/!component/ResumePage'
 import { createFileRoute } from '@tanstack/react-router'
 
-export const Route = createFileRoute('/resume')({
+export const Route = createFileRoute('/resume/')({
   component: RouteComponent,
   head() {
     return {

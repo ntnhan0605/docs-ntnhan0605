@@ -24,3 +24,46 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Dependency directories
+**/node_modules/
+
+# Build outputs
+build
+coverage
+.cache
+.parcel-cache
+.next
+.out
+storybook-static
+**/dist/
+**/dist-ssr/
+
+# Environment files
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Database / local data
+*.sqlite
+*.db
+
+# Monorepo tooling
+.turbo
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# OS / editor
+*.swp
+
+# .NET / C#
+**/bin/
+**/obj/
+*.user
+*.DotSettings.user

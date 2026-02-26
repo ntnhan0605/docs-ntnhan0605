@@ -1,0 +1,33 @@
+node_modules
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Git metadata
+.git
+.gitignore
+
+# Build outputs
+dist
+dist-ssr
+build
+coverage
+.cache
+.parcel-cache
+.next
+.out
+
+# Environment & local config
+.env
+.env.*
+!.env.example
+!.env.*.example
+.vscode
+.idea
+
+# Logs & runtime data
+logs
+*.log
+
+# OS files
+.DS_Store

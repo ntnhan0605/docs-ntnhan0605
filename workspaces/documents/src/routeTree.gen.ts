@@ -10,8 +10,8 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as WelcomeRouteImport } from './routes/welcome'
-import { Route as ResumeRouteImport } from './routes/resume'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ResumeIndexRouteImport } from './routes/resume/index'
 import { Route as ReactDemoVirtualized_listRouteImport } from './routes/react/demo/virtualized_list'
 
 const WelcomeRoute = WelcomeRouteImport.update({
@@ -19,14 +19,14 @@ const WelcomeRoute = WelcomeRouteImport.update({
   path: '/welcome',
   getParentRoute: () => rootRouteImport,
 } as any)
-const ResumeRoute = ResumeRouteImport.update({
-  id: '/resume',
-  path: '/resume',
-  getParentRoute: () => rootRouteImport,
-} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ResumeIndexRoute = ResumeIndexRouteImport.update({
+  id: '/resume/',
+  path: '/resume/',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ReactDemoVirtualized_listRoute =
@@ -38,35 +38,40 @@ const ReactDemoVirtualized_listRoute =
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
-  '/resume': typeof ResumeRoute
   '/welcome': typeof WelcomeRoute
+  '/resume/': typeof ResumeIndexRoute
   '/react/demo/virtualized_list': typeof ReactDemoVirtualized_listRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
-  '/resume': typeof ResumeRoute
   '/welcome': typeof WelcomeRoute
+  '/resume': typeof ResumeIndexRoute
   '/react/demo/virtualized_list': typeof ReactDemoVirtualized_listRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
-  '/resume': typeof ResumeRoute
   '/welcome': typeof WelcomeRoute
+  '/resume/': typeof ResumeIndexRoute
   '/react/demo/virtualized_list': typeof ReactDemoVirtualized_listRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/resume' | '/welcome' | '/react/demo/virtualized_list'
+  fullPaths: '/' | '/welcome' | '/resume/' | '/react/demo/virtualized_list'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/resume' | '/welcome' | '/react/demo/virtualized_list'
-  id: '__root__' | '/' | '/resume' | '/welcome' | '/react/demo/virtualized_list'
+  to: '/' | '/welcome' | '/resume' | '/react/demo/virtualized_list'
+  id:
+    | '__root__'
+    | '/'
+    | '/welcome'
+    | '/resume/'
+    | '/react/demo/virtualized_list'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
-  ResumeRoute: typeof ResumeRoute
   WelcomeRoute: typeof WelcomeRoute
+  ResumeIndexRoute: typeof ResumeIndexRoute
   ReactDemoVirtualized_listRoute: typeof ReactDemoVirtualized_listRoute
 }
 
@@ -79,18 +84,18 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof WelcomeRouteImport
       parentRoute: typeof rootRouteImport
     }
-    '/resume': {
-      id: '/resume'
-      path: '/resume'
-      fullPath: '/resume'
-      preLoaderRoute: typeof ResumeRouteImport
-      parentRoute: typeof rootRouteImport
-    }
     '/': {
       id: '/'
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/resume/': {
+      id: '/resume/'
+      path: '/resume'
+      fullPath: '/resume/'
+      preLoaderRoute: typeof ResumeIndexRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/react/demo/virtualized_list': {
@@ -105,8 +110,8 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
-  ResumeRoute: ResumeRoute,
   WelcomeRoute: WelcomeRoute,
+  ResumeIndexRoute: ResumeIndexRoute,
   ReactDemoVirtualized_listRoute: ReactDemoVirtualized_listRoute,
 }
 export const routeTree = rootRouteImport
