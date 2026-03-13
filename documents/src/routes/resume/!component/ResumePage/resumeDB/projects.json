@@ -8,8 +8,8 @@
         "name": [{ "name": "IOT Platform", "href": "#prism" }],
         "details": [
           "Developed UI features to control lights, manage light groups, configure devices, schedule lighting, and track lighting history.",
-          "",
-          "",
+          "Built UI components for a visitor management system supporting visitor invitations and check-in/check-out workflows.",
+          "Refactored the authentication architecture by replacing Kratos with a refresh token–based authentication workflow.",
           "<b>Team size : </b> 8 (2 FE, 2 BE, 1 PM, 1 SA, 1 BA, 1 QC)",
           "<b>Tech stacks : </b>  React.js, Tanstack Router, Tanstack Query, Tanstack Form with Zod, Zustand, MUI v7, TailwindCSS v4, Typescript"
         ]
