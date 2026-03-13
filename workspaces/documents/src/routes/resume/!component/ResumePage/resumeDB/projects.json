@@ -1,5 +1,33 @@
 [
   {
+    "company": "VN Solution - VSOL",
+    "location": "HCMC, Vietnam",
+    "projects": [
+      {
+        "term": "Jan 2026 - Now",
+        "name": [{ "name": "IOT Platform", "href": "#prism" }],
+        "details": [
+          "Developed UI features to control lights, manage light groups, configure devices, schedule lighting, and track lighting history.",
+          "",
+          "",
+          "<b>Team size : </b> 8 (2 FE, 2 BE, 1 PM, 1 SA, 1 BA, 1 QC)",
+          "<b>Tech stacks : </b>  React.js, Tanstack Router, Tanstack Query, Tanstack Form with Zod, Zustand, MUI v7, TailwindCSS v4, Typescript"
+        ]
+      },
+      {
+        "term": "Nov 2025 - Jan 2026",
+        "name": [{ "name": "Lamprell", "href": "#lamprell" }],
+        "details": [
+          "Worked closely with clients to refine and validate requirements for upcoming feature implementations.",
+          "Developed a certificate generation feature for workers after completing required document reading.",
+          "Built Cypress end-to-end tests covering authorization flows, API testing, and mocks, achieving 90% test coverage.",
+          "<b>Team size : </b> 8 (2 FE, 2 BE, 1 PM, 1 BA, 1 QC)",
+          "<b>Tech stacks : </b> React.js, Next.js, Zustand, Mantine V6, TailwindCSS, Typescript"
+        ]
+      }
+    ]
+  },
+  {
     "company": "Hello Health Group",
     "location": "HCMC, Vietnam",
     "projects": [

@@ -1,5 +1,5 @@
 {
-  "name": "@ntnhan0605/learn",
+  "name": "@ntnhan0605/workspaces",
   "private": true,
   "version": "1.0.0",
   "repository": "https://github.com/ntnhan0605/Learn.git",
@@ -9,19 +9,27 @@
     "workspaces/*"
   ],
   "scripts": {
-    "documents:dev": "npm run dev --workspace documents",
-    "documents:build": "npm run build --workspace documents",
-    "documents:preview": "npm run preview --workspace documents",
-    "documents:test": "npm run test --workspace documents",
-    "documents:lint": "npm run lint --workspace documents",
-    "documents:format": "npm run format --workspace documents",
-    "documents:check": "npm run check --workspace documents",
-    "documents:icons": "npm run icons --workspace documents"
+    "docs:dev": "bun --filter @ntnhan0605/docs dev",
+    "docs:build": "bun --filter @ntnhan0605/docs build",
+    "docs:preview": "bun --filter @ntnhan0605/docs preview",
+    "docs:test": "bun --filter @ntnhan0605/docs test",
+    "docs:lint": "bun --filter @ntnhan0605/docs lint",
+    "docs:format": "bun --filter @ntnhan0605/docs format",
+    "docs:check": "bun --filter @ntnhan0605/docs check",
+    "docs:icons": "bun --filter @ntnhan0605/doc iconss"
   },
   "dependencies": {
     "express": "^5.1.0"
   },
   "trustedDependencies": [
     "unrs-resolver"
-  ]
+  ],
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
 }
